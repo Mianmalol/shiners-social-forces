@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.zip
+*.zip.part*
+shiners-social-forces/
+downloads/

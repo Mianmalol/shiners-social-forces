@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_folder": "https://drive.google.com/drive/folders/1biRGH82dsgAKaXenlQzxtOQWJOmYXTdo",
+  "snapshot_date": "2026-11-05",
+  "license": "CC0-1.0",
+  "paper_doi": "10.1098/rsif.2021.0142",
+  "source_data_doi": "10.5061/dryad.sbcc2fr2h",
+  "files": [
+    {"name": "shiners-tracks.zip", "drive_id": "1idXX-aXZPl873ORsk2ytzmLwrYLXNUXC", "size": 4573816981, "sha256": "2481d0e6a7953fd662a25d478f6eaa81120bf0b0e876f1d6548593883c053169"},
+    {"name": "shiners-networks.zip", "drive_id": "1AXs_stPWHAxyOqK7uxmQlwO5pOH6hscO", "size": 2951609397, "sha256": "05b407d7066b843008f857dd935a0250a972d5abdfe11125128ceeeabde4d11d"},
+    {"name": "shiners-videos.zip", "drive_id": "1Mti3Ok4rl6OjvYmpLp6cZbdedOmHRhgy", "size": 1490759917, "sha256": "89173d03ee1ea459c64a08d3bde634a956ec61d284a15a0d261cc389d834dab9"},
+    {"name": "README.md", "drive_id": "1wv8GSQAvKgkZ55Bv_FDbptZYJ3Z4V9ef", "size": 9140, "sha256": "42c1a655bc1b5ce2b294175f0ae1516e811564b3cbe3d5ed4e2560a27eaa307c"},
+    {"name": "SHA256SUMS", "drive_id": "1R92EqE0lj-mCHr7zqt3lmoOytjXmkYEx", "size": 333}
+  ]
+}

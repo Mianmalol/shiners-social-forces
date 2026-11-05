@@ -1,0 +1,40 @@
+name: Mirror and verify source dataset
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mirror-source-dataset
+  cancel-in-progress: false
+
+env:
+  RELEASE_TAG: data-2026-11-05
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        archive: [shiners-tracks.zip, shiners-networks.zip, shiners-videos.zip]
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Install public Drive downloader
+        run: python -m pip install --disable-pip-version-check gdown==5.2.0
+      - name: Download, verify, split, upload, and verify GitHub digests
+        env:
+          ARCHIVE: ${{ matrix.archive }}
+        run: python scripts/mirror_archive.py "$ARCHIVE" "$RELEASE_TAG"
+  verify:
+    needs: transfer
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Verify complete draft and publish integrity manifests
+        run: python scripts/verify_release.py "$RELEASE_TAG"
