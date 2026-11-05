@@ -43,7 +43,9 @@ def main():
     repo = os.environ['GITHUB_REPOSITORY']
     source = json.loads((ROOT / 'source-manifest.json').read_text())
     item = next(x for x in source['files'] if x['name'] == name)
-    release = json.loads(gh('api', f'repos/{repo}/releases/tags/{tag}'))
+    # The by-tag REST endpoint excludes unpublished drafts; list includes them.
+    release = next(x for x in json.loads(gh('api', f'repos/{repo}/releases?per_page=100'))
+                   if x['tag_name'] == tag)
     if not release['draft']:
         raise RuntimeError('Refusing to replace assets in a published release')
     with tempfile.TemporaryDirectory(prefix='shiners-mirror-') as tmp:

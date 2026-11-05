@@ -18,7 +18,8 @@ def main():
     tag = sys.argv[1]
     repo = os.environ['GITHUB_REPOSITORY']
     source = json.loads((ROOT / 'source-manifest.json').read_text())
-    release = json.loads(gh('api', f'repos/{repo}/releases/tags/{tag}'))
+    release = next(x for x in json.loads(gh('api', f'repos/{repo}/releases?per_page=100'))
+                   if x['tag_name'] == tag)
     if not release['draft']:
         raise RuntimeError('Expected a draft release')
     assets = {x['name']: x for x in json.loads(gh('api', f'repos/{repo}/releases/{release["id"]}/assets?per_page=100'))}
