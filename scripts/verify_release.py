@@ -32,7 +32,10 @@ def main():
             filename = item['name'] + '.manifest.json'
             expected_names.add(filename)
             gh('release', 'download', tag, '--repo', repo, '--pattern', filename, '--dir', tmp)
-            record = json.loads((directory / filename).read_text())
+            data = (directory / filename).read_bytes()
+            assert assets[filename]['size'] == len(data)
+            assert assets[filename]['digest'] == 'sha256:' + hashlib.sha256(data).hexdigest()
+            record = json.loads(data)
             for key in ('name', 'size', 'sha256'):
                 assert record[key] == item[key], (filename, key)
             assert sum(part['size'] for part in record['parts']) == item['size']
@@ -55,6 +58,12 @@ def main():
         sums = directory / 'ASSET_SHA256SUMS'
         sums.write_text(''.join(f'{p["sha256"]}  {p["name"]}\n' for r in records for p in r['parts']))
         gh('release', 'upload', tag, str(manifest), str(sums), '--repo', repo, '--clobber')
+        uploaded = {x['name']: x for x in json.loads(gh('api', f'repos/{repo}/releases/{release["id"]}/assets?per_page=100'))}
+        for path in (manifest, sums):
+            data = path.read_bytes()
+            assert uploaded[path.name]['state'] == 'uploaded'
+            assert uploaded[path.name]['size'] == len(data)
+            assert uploaded[path.name]['digest'] == 'sha256:' + hashlib.sha256(data).hexdigest()
         print(f'Verified all 3 archives: {sum(x["size"] for x in records):,} source bytes')
         print('Draft is ready for publication; original archive and part SHA256 hashes match.')
 

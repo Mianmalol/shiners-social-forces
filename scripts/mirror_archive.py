@@ -55,13 +55,14 @@ def main():
                                         quiet=True, use_cookies=False, resume=True)
                 if result is None:
                     raise RuntimeError('Google Drive download did not complete')
+                if archive.stat().st_size != item['size'] or sha256(archive) != item['sha256']:
+                    archive.unlink(missing_ok=True)
+                    raise RuntimeError(f'Source size/SHA256 mismatch: {name}')
                 break
             except Exception:
                 if attempt == 2:
                     raise
                 time.sleep(10 * (attempt + 1))
-        if archive.stat().st_size != item['size'] or sha256(archive) != item['sha256']:
-            raise RuntimeError(f'Source size/SHA256 mismatch: {name}')
         print(f'Verified source: {name} ({item["size"]:,} bytes)', flush=True)
         with zipfile.ZipFile(archive) as zf:
             inventory = [{'path': x.filename, 'size': x.file_size,
@@ -103,6 +104,11 @@ def main():
         manifest = directory / f'{name}.manifest.json'
         manifest.write_text(json.dumps(record, indent=2) + '\n')
         upload(manifest, tag, repo)
+        assets = json.loads(gh('api', f'repos/{repo}/releases/{release["id"]}/assets?per_page=100'))
+        remote = next(x for x in assets if x['name'] == manifest.name)
+        if (remote['state'] != 'uploaded' or remote['size'] != manifest.stat().st_size
+                or remote.get('digest') != 'sha256:' + sha256(manifest)):
+            raise RuntimeError(f'GitHub metadata verification failed: {manifest.name}')
 
 
 if __name__ == '__main__':
