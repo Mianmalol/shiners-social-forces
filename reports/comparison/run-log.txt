@@ -1,0 +1,42 @@
+10-fish__0066: starting fresh analysis process
+10-fish/0066: 245,780 rows, 10 fish, measuring tracks
+10-fish/0066: streaming network
+10-fish/0066: complete; P median=0.893984429425299, C median=0.38308575751335017, C coverage=0.466
+10-fish__0105: starting fresh analysis process
+10-fish/0105: 245,780 rows, 10 fish, measuring tracks
+10-fish/0105: streaming network
+10-fish/0105: complete; P median=0.9189030440913193, C median=0.28729205302753935, C coverage=0.373
+10-fish__0126: starting fresh analysis process
+10-fish/0126: 246,380 rows, 10 fish, measuring tracks
+10-fish/0126: streaming network
+10-fish/0126: complete; P median=0.943327323156659, C median=0.3009543509839444, C coverage=0.725
+30-fish__0084: starting fresh analysis process
+30-fish/0084: 737,790 rows, 30 fish, measuring tracks
+30-fish/0084: streaming network
+30-fish/0084: complete; P median=0.8273422479928021, C median=0.2678104614379456, C coverage=0.441
+30-fish__0115: starting fresh analysis process
+30-fish/0115: 737,790 rows, 30 fish, measuring tracks
+30-fish/0115: streaming network
+30-fish/0115: complete; P median=0.8092100522636652, C median=0.34361561646744004, C coverage=0.457
+30-fish__0120: starting fresh analysis process
+30-fish/0120: 736,890 rows, 30 fish, measuring tracks
+30-fish/0120: streaming network
+30-fish/0120: complete; P median=0.8106428167388547, C median=0.39718224161717236, C coverage=0.559
+70-fish__0103: starting fresh analysis process
+70-fish/0103: 1,721,510 rows, 70 fish, measuring tracks
+70-fish/0103: streaming network
+70-fish/0103: complete; P median=0.6935423957506943, C median=0.3787943863267864, C coverage=0.365
+70-fish__0107: starting fresh analysis process
+70-fish/0107: 1,720,460 rows, 70 fish, measuring tracks
+70-fish/0107: streaming network
+70-fish/0107: complete; P median=0.5085093119148025, C median=0.7811371079737477, C coverage=0.106
+70-fish__0124: waiting for tracks and networks with completed fetch provenance
+70-fish__0124: starting fresh analysis process
+70-fish/0124: 1,717,310 rows, 70 fish, measuring tracks
+70-fish/0124: streaming network
+70-fish/0124: complete; P median=0.5097677060534065, C median=0.6811492901517406, C coverage=0.059
+150-fish__150-fish: waiting for tracks and networks with completed fetch provenance
+150-fish__150-fish: starting fresh analysis process
+150-fish/150-fish: 2,717,849 rows, 151 fish, measuring tracks
+150-fish/150-fish: streaming network
+150-fish/150-fish: complete; P median=0.6406134613282162, C median=0.48370776486745354, C coverage=0.871

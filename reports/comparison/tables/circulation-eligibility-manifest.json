@@ -1,0 +1,44 @@
+{
+  "reproduce": "MPLCONFIGDIR=.cache/matplotlib uv run python scripts/plot_eligibility.py --root reports/comparison-rerun",
+  "prerequisites": [
+    "Install the frozen environment and fetch the source tracks and networks for 70-fish__0107 and 70-fish__0124; see README.md.",
+    "Regenerate collective.csv, summary.json, config.json, and provenance.json for both trials in a fresh output directory before plotting:",
+    "uv run python scripts/run_comparison.py --trial 70-fish__0107 --trial 70-fish__0124 --output-root reports/comparison-rerun/trials"
+  ],
+  "git_only_verification_limit": "The frame-level collective.csv files are omitted from Git. Their recorded hashes cannot be checked from a fresh checkout alone; regenerate the trial outputs first. Rerun provenance will describe the new run.",
+  "original_output_root": "reports/comparison",
+  "input_path_base": "comparison root supplied by --root",
+  "source_path_base": "repository root",
+  "source_hashes": {
+    "scripts/plot_eligibility.py": "692a05edb9d5e148c6dac0d5052de31a668dd66da63b7b04438d26abbab329b4",
+    "src/shiners/metrics.py": "72b20c3d6815a6ae607fdce8af61a9c8caa68e2dc2e5e00688c5689fb62a3cc6"
+  },
+  "input_hashes": {
+    "trials/70-fish__0107/summary.json": "7df6d26f4f2360fe875676f83f2eb7a2b3f11859c78eb01ff2695f93a461a8b9",
+    "trials/70-fish__0107/config.json": "bd59f69f5d5cde4e2b37f50b14e8d622c49210068a9cab3ddf96740d9458c9e9",
+    "trials/70-fish__0107/collective.csv": "ebb79190274a8ed44db58a176da5000e85a5f058b6acc4494d0404541d0a7dc0",
+    "trials/70-fish__0107/provenance.json": "4308b6aab7e2464607f4f020d8de0497ce4c10ffb101344eeb0d67ad06d34c32",
+    "trials/70-fish__0124/summary.json": "7cc1a242dc0753b80ab331a8e2ce35fa26e812b00d58b5a323803fad66088a47",
+    "trials/70-fish__0124/config.json": "bd59f69f5d5cde4e2b37f50b14e8d622c49210068a9cab3ddf96740d9458c9e9",
+    "trials/70-fish__0124/collective.csv": "6ec44b1b4a5cadd86bfdb4fb9e5ff82ee0d0840a39e4aae0c555d5e0bd862e44",
+    "trials/70-fish__0124/provenance.json": "b8b3dba88161d2c6a63c0f65d38fac3cfd39bc1066034b69f5378de733d24a4f"
+  },
+  "output_hashes": {
+    "figures/05-circulation-eligibility.png": "314d3229909a55c8032ce76e999915b3f0193765b1ef4a613be974cf8f0631c9",
+    "figures/05-circulation-eligibility.svg": "3e7b959e46b27a381f15e21133d2fd93cd7fde2c48f788328a7dd7ef5ab1cdee",
+    "tables/circulation-eligibility.json": "1a7850ec97a12a81bc6133173810434e924ad2fccae40a5f32a01bc70d48b3d0"
+  },
+  "python": "3.13.9",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "matplotlib": "3.11.2"
+  },
+  "validation": [
+    "inputs match frozen trial provenance",
+    "metric source matches frozen trial provenance",
+    "integer qualifying counts",
+    "exact finite-circulation frame-mask match",
+    "summary counts and all-tracked-frame coverage match"
+  ]
+}

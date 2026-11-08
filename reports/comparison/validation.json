@@ -1,0 +1,736 @@
+{
+  "created_utc": "2026-11-08T02:42:05.080336+00:00",
+  "status": "COMPUTATIONAL_CHECKS_PASSED",
+  "scope": "File integrity, common analysis source/configuration, exact pilot parity, row/histogram accounting, and 50 independent sampled P calculations. This is not scientific approval or a complete independent recomputation of all metrics.",
+  "alltrials_samesource": true,
+  "alltrials_sameconfig": true,
+  "source_hashes": {
+    "src/shiners/compare_trial.py": "322382f5b180a5192c3e98c040c35569a27d4b907d611ed5b9251e31e6e93ff4",
+    "src/shiners/metrics.py": "72b20c3d6815a6ae607fdce8af61a9c8caa68e2dc2e5e00688c5689fb62a3cc6",
+    "src/shiners/network_summary.py": "962b0dc4baadeb1e560216056bc3315b55ce5b204eba10ffdc3b0a978af72302",
+    "scripts/fetch_trials.py": "a78166c58b4a92d6a959a174256db5e6b81c84eae3b4c1d96bd255d68aab3550",
+    "scripts/fetch_pilot.py": "b1caae8a19511ee97938c745273e81240f19b9ea9377c10caedf998b1b634577",
+    "pyproject.toml": "cf6021aefb8f8158cafe1f5f149b77151bf387d87b38d251e2af63a417359a1e",
+    "uv.lock": "9bb5b0d8d7952056304a7abde254e6ddc9f66bda058dbcf999812841e0d23324",
+    "configs/comparison.json": "bd59f69f5d5cde4e2b37f50b14e8d622c49210068a9cab3ddf96740d9458c9e9",
+    "docs/methods.md": "3d7c9636b6db7c52d30518425896ca22ae10cd4895b3096551c49b803328366a",
+    "docs/comparison-methods.md": "5c2a45ee6d3daaf33fdfe5f88de2a8e6afddcbadc95ba6009f7a5a5ae57ecf5f"
+  },
+  "config_sha256": "bd59f69f5d5cde4e2b37f50b14e8d622c49210068a9cab3ddf96740d9458c9e9",
+  "validator_sha256": "936173518bee38b3311dca1242fa3ac28426b036f38431a904cdbef927c4550c",
+  "provenance_validator_sha256": "e00c12b2bda09f72e919a39aba7c99479be0f15693463f8136a6b2b7b3873411",
+  "checks": {
+    "strict_hash_trials": 10,
+    "same_source_comparisons": 9,
+    "same_config_comparisons": 10,
+    "parquet_metadata_files": 20,
+    "network_histograms": 10,
+    "pilot_parity": {
+      "primary_quantile_dictionaries": 10,
+      "network_degree_quantile_dictionaries": 1,
+      "network_scalars": 2,
+      "comparison": "Exact JSON numeric equality",
+      "max_absolute_difference": 0.0,
+      "pilot_summary_sha256": "600940a6768fcb74165795b5084af4422fb12f524ca54277e1931567cd45a72a"
+    },
+    "independent_polarization_frames": 50,
+    "independent_polarization_absolute_tolerance": 1e-12,
+    "independent_polarization_max_absolute_difference": 2.220446049250313e-16
+  },
+  "totals": {
+    "trials": 10,
+    "input_files": 30,
+    "input_bytes": 7525410978,
+    "output_files_including_provenance": 209,
+    "output_bytes_including_provenance": 229890011,
+    "track_rows": 10827539,
+    "network_rows": 266688111,
+    "frames": 239246,
+    "input_hash_checks": 30,
+    "source_hash_checks": 100,
+    "output_hash_checks": 199,
+    "independent_polarization_frames": 50
+  },
+  "trials": [
+    {
+      "trial": "10-fish__0066",
+      "strict_provenance_hashes_match": true,
+      "same_source_snapshot": true,
+      "config_matches": true,
+      "file_totals": {
+        "input_files": 3,
+        "input_bytes": 128019114,
+        "output_files_including_provenance": 20,
+        "output_bytes_including_provenance": 18549335,
+        "input_hash_checks": 3,
+        "source_hash_checks": 10,
+        "output_hash_checks": 19
+      },
+      "accounting": {
+        "metadata_files_checked": 2,
+        "track_rows": 245780,
+        "network_rows": 1662869,
+        "frames": 24578,
+        "fish": 10,
+        "observer_frames": 245780,
+        "histogram_weighted_edges": 1662869,
+        "histogram_mean_degree": 6.76568069004801,
+        "mean_degree_max_absolute_difference": 0.0
+      },
+      "independent_polarization": {
+        "selection": "First, quarter, middle, three-quarter and last index of sorted finite primary P frames",
+        "frames_checked": 5,
+        "checks": [
+          {
+            "frame": 1,
+            "fish": 10,
+            "saved": 0.9832345162383352,
+            "independent": 0.9832345162383352,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 6140,
+            "fish": 10,
+            "saved": 0.8629397704863518,
+            "independent": 0.862939770486352,
+            "absolute_difference": 1.1102230246251565e-16
+          },
+          {
+            "frame": 12280,
+            "fish": 10,
+            "saved": 0.9455854355267185,
+            "independent": 0.9455854355267185,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 18432,
+            "fish": 10,
+            "saved": 0.7129150706948654,
+            "independent": 0.7129150706948655,
+            "absolute_difference": 1.1102230246251565e-16
+          },
+          {
+            "frame": 24584,
+            "fish": 10,
+            "saved": 0.949866421669803,
+            "independent": 0.949866421669803,
+            "absolute_difference": 0.0
+          }
+        ],
+        "max_absolute_difference": 1.1102230246251565e-16
+      }
+    },
+    {
+      "trial": "10-fish__0105",
+      "strict_provenance_hashes_match": true,
+      "same_source_snapshot": true,
+      "config_matches": true,
+      "file_totals": {
+        "input_files": 3,
+        "input_bytes": 127756562,
+        "output_files_including_provenance": 20,
+        "output_bytes_including_provenance": 18123997,
+        "input_hash_checks": 3,
+        "source_hash_checks": 10,
+        "output_hash_checks": 19
+      },
+      "accounting": {
+        "metadata_files_checked": 2,
+        "track_rows": 245780,
+        "network_rows": 1611006,
+        "frames": 24578,
+        "fish": 10,
+        "observer_frames": 245780,
+        "histogram_weighted_edges": 1611006,
+        "histogram_mean_degree": 6.554666775164781,
+        "mean_degree_max_absolute_difference": 0.0
+      },
+      "independent_polarization": {
+        "selection": "First, quarter, middle, three-quarter and last index of sorted finite primary P frames",
+        "frames_checked": 5,
+        "checks": [
+          {
+            "frame": 1,
+            "fish": 10,
+            "saved": 0.9663244828524764,
+            "independent": 0.9663244828524764,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 6158,
+            "fish": 10,
+            "saved": 0.9890628903153232,
+            "independent": 0.9890628903153232,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 12292,
+            "fish": 10,
+            "saved": 0.697313531677751,
+            "independent": 0.697313531677751,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 18438,
+            "fish": 10,
+            "saved": 0.772181422433984,
+            "independent": 0.772181422433984,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 24584,
+            "fish": 10,
+            "saved": 0.8954132242394689,
+            "independent": 0.8954132242394687,
+            "absolute_difference": 2.220446049250313e-16
+          }
+        ],
+        "max_absolute_difference": 2.220446049250313e-16
+      }
+    },
+    {
+      "trial": "10-fish__0126",
+      "strict_provenance_hashes_match": true,
+      "same_source_snapshot": true,
+      "config_matches": true,
+      "file_totals": {
+        "input_files": 3,
+        "input_bytes": 128754835,
+        "output_files_including_provenance": 21,
+        "output_bytes_including_provenance": 25076895,
+        "input_hash_checks": 3,
+        "source_hash_checks": 10,
+        "output_hash_checks": 20
+      },
+      "accounting": {
+        "metadata_files_checked": 2,
+        "track_rows": 246380,
+        "network_rows": 1707122,
+        "frames": 24638,
+        "fish": 10,
+        "observer_frames": 246380,
+        "histogram_weighted_edges": 1707122,
+        "histogram_mean_degree": 6.928817274129393,
+        "mean_degree_max_absolute_difference": 0.0
+      },
+      "independent_polarization": {
+        "selection": "First, quarter, middle, three-quarter and last index of sorted finite primary P frames",
+        "frames_checked": 5,
+        "checks": [
+          {
+            "frame": 1,
+            "fish": 10,
+            "saved": 0.9393265215904555,
+            "independent": 0.9393265215904556,
+            "absolute_difference": 1.1102230246251565e-16
+          },
+          {
+            "frame": 6158,
+            "fish": 10,
+            "saved": 0.9861664366324905,
+            "independent": 0.9861664366324903,
+            "absolute_difference": 2.220446049250313e-16
+          },
+          {
+            "frame": 12316,
+            "fish": 10,
+            "saved": 0.9522006636048349,
+            "independent": 0.9522006636048349,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 18486,
+            "fish": 10,
+            "saved": 0.9931113458289654,
+            "independent": 0.9931113458289653,
+            "absolute_difference": 1.1102230246251565e-16
+          },
+          {
+            "frame": 24644,
+            "fish": 10,
+            "saved": 0.8575963557221978,
+            "independent": 0.8575963557221978,
+            "absolute_difference": 0.0
+          }
+        ],
+        "max_absolute_difference": 2.220446049250313e-16
+      }
+    },
+    {
+      "trial": "30-fish__0084",
+      "strict_provenance_hashes_match": true,
+      "same_source_snapshot": true,
+      "config_matches": true,
+      "file_totals": {
+        "input_files": 3,
+        "input_bytes": 424451805,
+        "output_files_including_provenance": 21,
+        "output_bytes_including_provenance": 25088318,
+        "input_hash_checks": 3,
+        "source_hash_checks": 10,
+        "output_hash_checks": 20
+      },
+      "accounting": {
+        "metadata_files_checked": 2,
+        "track_rows": 737790,
+        "network_rows": 10901974,
+        "frames": 24593,
+        "fish": 30,
+        "observer_frames": 737790,
+        "histogram_weighted_edges": 10901974,
+        "histogram_mean_degree": 14.776527196085606,
+        "mean_degree_max_absolute_difference": 0.0
+      },
+      "independent_polarization": {
+        "selection": "First, quarter, middle, three-quarter and last index of sorted finite primary P frames",
+        "frames_checked": 5,
+        "checks": [
+          {
+            "frame": 1,
+            "fish": 30,
+            "saved": 0.9141494259005103,
+            "independent": 0.9141494259005102,
+            "absolute_difference": 1.1102230246251565e-16
+          },
+          {
+            "frame": 6120,
+            "fish": 30,
+            "saved": 0.9722304210662155,
+            "independent": 0.9722304210662156,
+            "absolute_difference": 1.1102230246251565e-16
+          },
+          {
+            "frame": 12305,
+            "fish": 30,
+            "saved": 0.4561313183278549,
+            "independent": 0.456131318327855,
+            "absolute_difference": 5.551115123125783e-17
+          },
+          {
+            "frame": 18451,
+            "fish": 30,
+            "saved": 0.6231767434544466,
+            "independent": 0.6231767434544467,
+            "absolute_difference": 1.1102230246251565e-16
+          },
+          {
+            "frame": 24599,
+            "fish": 30,
+            "saved": 0.49225875055638413,
+            "independent": 0.49225875055638413,
+            "absolute_difference": 0.0
+          }
+        ],
+        "max_absolute_difference": 1.1102230246251565e-16
+      }
+    },
+    {
+      "trial": "30-fish__0115",
+      "strict_provenance_hashes_match": true,
+      "same_source_snapshot": true,
+      "config_matches": true,
+      "file_totals": {
+        "input_files": 3,
+        "input_bytes": 430512369,
+        "output_files_including_provenance": 21,
+        "output_bytes_including_provenance": 25146681,
+        "input_hash_checks": 3,
+        "source_hash_checks": 10,
+        "output_hash_checks": 20
+      },
+      "accounting": {
+        "metadata_files_checked": 2,
+        "track_rows": 737790,
+        "network_rows": 11420599,
+        "frames": 24593,
+        "fish": 30,
+        "observer_frames": 737790,
+        "histogram_weighted_edges": 11420599,
+        "histogram_mean_degree": 15.479471123219344,
+        "mean_degree_max_absolute_difference": 0.0
+      },
+      "independent_polarization": {
+        "selection": "First, quarter, middle, three-quarter and last index of sorted finite primary P frames",
+        "frames_checked": 5,
+        "checks": [
+          {
+            "frame": 1,
+            "fish": 30,
+            "saved": 0.9695757263456092,
+            "independent": 0.9695757263456092,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 6149,
+            "fish": 30,
+            "saved": 0.9248520419035441,
+            "independent": 0.9248520419035441,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 12287,
+            "fish": 30,
+            "saved": 0.6910628840379469,
+            "independent": 0.6910628840379469,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 18438,
+            "fish": 30,
+            "saved": 0.9005902472472764,
+            "independent": 0.9005902472472763,
+            "absolute_difference": 1.1102230246251565e-16
+          },
+          {
+            "frame": 24599,
+            "fish": 30,
+            "saved": 0.7367696802366749,
+            "independent": 0.736769680236675,
+            "absolute_difference": 1.1102230246251565e-16
+          }
+        ],
+        "max_absolute_difference": 1.1102230246251565e-16
+      }
+    },
+    {
+      "trial": "30-fish__0120",
+      "strict_provenance_hashes_match": true,
+      "same_source_snapshot": true,
+      "config_matches": true,
+      "file_totals": {
+        "input_files": 3,
+        "input_bytes": 440482318,
+        "output_files_including_provenance": 20,
+        "output_bytes_including_provenance": 20370981,
+        "input_hash_checks": 3,
+        "source_hash_checks": 10,
+        "output_hash_checks": 19
+      },
+      "accounting": {
+        "metadata_files_checked": 2,
+        "track_rows": 736890,
+        "network_rows": 12511558,
+        "frames": 24563,
+        "fish": 30,
+        "observer_frames": 736890,
+        "histogram_weighted_edges": 12511558,
+        "histogram_mean_degree": 16.978867945012144,
+        "mean_degree_max_absolute_difference": 0.0
+      },
+      "independent_polarization": {
+        "selection": "First, quarter, middle, three-quarter and last index of sorted finite primary P frames",
+        "frames_checked": 5,
+        "checks": [
+          {
+            "frame": 1,
+            "fish": 30,
+            "saved": 0.41195998525681243,
+            "independent": 0.41195998525681243,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 6156,
+            "fish": 30,
+            "saved": 0.7715129927950909,
+            "independent": 0.7715129927950907,
+            "absolute_difference": 2.220446049250313e-16
+          },
+          {
+            "frame": 12277,
+            "fish": 30,
+            "saved": 0.4926360305846616,
+            "independent": 0.49263603058466165,
+            "absolute_difference": 5.551115123125783e-17
+          },
+          {
+            "frame": 18421,
+            "fish": 30,
+            "saved": 0.3493839068546467,
+            "independent": 0.3493839068546467,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 24569,
+            "fish": 30,
+            "saved": 0.8085746888690015,
+            "independent": 0.8085746888690016,
+            "absolute_difference": 1.1102230246251565e-16
+          }
+        ],
+        "max_absolute_difference": 2.220446049250313e-16
+      }
+    },
+    {
+      "trial": "70-fish__0103",
+      "strict_provenance_hashes_match": true,
+      "same_source_snapshot": true,
+      "config_matches": true,
+      "file_totals": {
+        "input_files": 3,
+        "input_bytes": 1190342822,
+        "output_files_including_provenance": 21,
+        "output_bytes_including_provenance": 25336520,
+        "input_hash_checks": 3,
+        "source_hash_checks": 10,
+        "output_hash_checks": 20
+      },
+      "accounting": {
+        "metadata_files_checked": 2,
+        "track_rows": 1721510,
+        "network_rows": 41601205,
+        "frames": 24593,
+        "fish": 70,
+        "observer_frames": 1721510,
+        "histogram_weighted_edges": 41601205,
+        "histogram_mean_degree": 24.165532003880315,
+        "mean_degree_max_absolute_difference": 0.0
+      },
+      "independent_polarization": {
+        "selection": "First, quarter, middle, three-quarter and last index of sorted finite primary P frames",
+        "frames_checked": 5,
+        "checks": [
+          {
+            "frame": 1,
+            "fish": 70,
+            "saved": 0.933919460864495,
+            "independent": 0.933919460864495,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 6150,
+            "fish": 70,
+            "saved": 0.8330605662757646,
+            "independent": 0.8330605662757646,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 12253,
+            "fish": 70,
+            "saved": 0.9084415790567707,
+            "independent": 0.9084415790567708,
+            "absolute_difference": 1.1102230246251565e-16
+          },
+          {
+            "frame": 18401,
+            "fish": 70,
+            "saved": 0.32551975468634864,
+            "independent": 0.3255197546863486,
+            "absolute_difference": 5.551115123125783e-17
+          },
+          {
+            "frame": 24599,
+            "fish": 70,
+            "saved": 0.25838439736578395,
+            "independent": 0.258384397365784,
+            "absolute_difference": 5.551115123125783e-17
+          }
+        ],
+        "max_absolute_difference": 1.1102230246251565e-16
+      }
+    },
+    {
+      "trial": "70-fish__0107",
+      "strict_provenance_hashes_match": true,
+      "same_source_snapshot": true,
+      "config_matches": true,
+      "file_totals": {
+        "input_files": 3,
+        "input_bytes": 1139830570,
+        "output_files_including_provenance": 21,
+        "output_bytes_including_provenance": 23779238,
+        "input_hash_checks": 3,
+        "source_hash_checks": 10,
+        "output_hash_checks": 20
+      },
+      "accounting": {
+        "metadata_files_checked": 2,
+        "track_rows": 1720460,
+        "network_rows": 37101907,
+        "frames": 24578,
+        "fish": 70,
+        "observer_frames": 1720460,
+        "histogram_weighted_edges": 37101907,
+        "histogram_mean_degree": 21.56510874998547,
+        "mean_degree_max_absolute_difference": 0.0
+      },
+      "independent_polarization": {
+        "selection": "First, quarter, middle, three-quarter and last index of sorted finite primary P frames",
+        "frames_checked": 5,
+        "checks": [
+          {
+            "frame": 1,
+            "fish": 70,
+            "saved": 0.20377853612358188,
+            "independent": 0.20377853612358185,
+            "absolute_difference": 2.7755575615628914e-17
+          },
+          {
+            "frame": 6102,
+            "fish": 70,
+            "saved": 0.4177536679613634,
+            "independent": 0.4177536679613634,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 12261,
+            "fish": 70,
+            "saved": 0.7933711166163813,
+            "independent": 0.7933711166163814,
+            "absolute_difference": 1.1102230246251565e-16
+          },
+          {
+            "frame": 18387,
+            "fish": 70,
+            "saved": 0.5589981923627423,
+            "independent": 0.5589981923627423,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 24584,
+            "fish": 70,
+            "saved": 0.40010425288480833,
+            "independent": 0.4001042528848084,
+            "absolute_difference": 5.551115123125783e-17
+          }
+        ],
+        "max_absolute_difference": 1.1102230246251565e-16
+      }
+    },
+    {
+      "trial": "70-fish__0124",
+      "strict_provenance_hashes_match": true,
+      "same_source_snapshot": true,
+      "config_matches": true,
+      "file_totals": {
+        "input_files": 3,
+        "input_bytes": 1206043621,
+        "output_files_including_provenance": 21,
+        "output_bytes_including_provenance": 23507389,
+        "input_hash_checks": 3,
+        "source_hash_checks": 10,
+        "output_hash_checks": 20
+      },
+      "accounting": {
+        "metadata_files_checked": 2,
+        "track_rows": 1717310,
+        "network_rows": 43483150,
+        "frames": 24533,
+        "fish": 70,
+        "observer_frames": 1717310,
+        "histogram_weighted_edges": 43483150,
+        "histogram_mean_degree": 25.320501249046472,
+        "mean_degree_max_absolute_difference": 0.0
+      },
+      "independent_polarization": {
+        "selection": "First, quarter, middle, three-quarter and last index of sorted finite primary P frames",
+        "frames_checked": 5,
+        "checks": [
+          {
+            "frame": 1,
+            "fish": 70,
+            "saved": 0.3244391205186957,
+            "independent": 0.32443912051869567,
+            "absolute_difference": 5.551115123125783e-17
+          },
+          {
+            "frame": 6121,
+            "fish": 70,
+            "saved": 0.2395345909059091,
+            "independent": 0.23953459090590914,
+            "absolute_difference": 5.551115123125783e-17
+          },
+          {
+            "frame": 12255,
+            "fish": 70,
+            "saved": 0.6769805081404386,
+            "independent": 0.6769805081404388,
+            "absolute_difference": 1.1102230246251565e-16
+          },
+          {
+            "frame": 18377,
+            "fish": 70,
+            "saved": 0.48102085418657964,
+            "independent": 0.48102085418657964,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 24539,
+            "fish": 70,
+            "saved": 0.8043564405129702,
+            "independent": 0.8043564405129702,
+            "absolute_difference": 0.0
+          }
+        ],
+        "max_absolute_difference": 1.1102230246251565e-16
+      }
+    },
+    {
+      "trial": "150-fish__150-fish",
+      "strict_provenance_hashes_match": true,
+      "same_source_snapshot": true,
+      "config_matches": true,
+      "file_totals": {
+        "input_files": 3,
+        "input_bytes": 2309216962,
+        "output_files_including_provenance": 23,
+        "output_bytes_including_provenance": 24910657,
+        "input_hash_checks": 3,
+        "source_hash_checks": 10,
+        "output_hash_checks": 22
+      },
+      "accounting": {
+        "metadata_files_checked": 2,
+        "track_rows": 2717849,
+        "network_rows": 104686721,
+        "frames": 17999,
+        "fish": 151,
+        "observer_frames": 2717849,
+        "histogram_weighted_edges": 104686721,
+        "histogram_mean_degree": 38.51822562622132,
+        "mean_degree_max_absolute_difference": 0.0
+      },
+      "independent_polarization": {
+        "selection": "First, quarter, middle, three-quarter and last index of sorted finite primary P frames",
+        "frames_checked": 5,
+        "checks": [
+          {
+            "frame": 1,
+            "fish": 151,
+            "saved": 0.4628548382908995,
+            "independent": 0.4628548382908995,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 4504,
+            "fish": 151,
+            "saved": 0.30802096489963365,
+            "independent": 0.30802096489963365,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 8992,
+            "fish": 151,
+            "saved": 0.8692466261984174,
+            "independent": 0.8692466261984174,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 13511,
+            "fish": 151,
+            "saved": 0.844172637968669,
+            "independent": 0.844172637968669,
+            "absolute_difference": 0.0
+          },
+          {
+            "frame": 17999,
+            "fish": 151,
+            "saved": 0.23539414004087836,
+            "independent": 0.23539414004087836,
+            "absolute_difference": 0.0
+          }
+        ],
+        "max_absolute_difference": 0.0
+      }
+    }
+  ]
+}

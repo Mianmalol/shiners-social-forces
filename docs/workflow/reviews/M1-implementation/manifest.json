@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-11-08T00:12:08.494688+00:00",
+  "prompt": {
+    "path": "docs/workflow/tasks/implementation-review-prompt.md",
+    "size_bytes": 995,
+    "sha256": "a59c232a427b66e4a7649f36a01c67d333c34a4d091ab48a3b268d40425b775c"
+  },
+  "inputs": [
+    {
+      "path": "docs/methods.md",
+      "size_bytes": 8316,
+      "sha256": "f1bc9ecdbc17b5a42967e3c73999863298165bceedcb50c15b138edd081298fd"
+    },
+    {
+      "path": "docs/workflow/decisions.md",
+      "size_bytes": 2604,
+      "sha256": "39a37e6bf7e5dc0e8a66ede7ea6300779bee089639477234aefb4d106268d824"
+    },
+    {
+      "path": "configs/pilot.json",
+      "size_bytes": 455,
+      "sha256": "f7a6424a74f164c75528f07a3aafa34510aa3af74594761e4c8f52c50e4c34b5"
+    },
+    {
+      "path": "src/shiners/metrics.py",
+      "size_bytes": 13462,
+      "sha256": "287411d2280f14d9128c6f61cdb1ee0a1da6197ad99e373c53b428d11b96ec4e"
+    },
+    {
+      "path": "src/shiners/validation.py",
+      "size_bytes": 4363,
+      "sha256": "3246f0fb379507393452cdd352f5c38498fdbafa86ba36f0e91920ca9681edc3"
+    },
+    {
+      "path": "src/shiners/pilot.py",
+      "size_bytes": 14242,
+      "sha256": "1f02fd7e6a6a03653bbb1ed17da962c9a0bb0f0a8e461eceb201ffbb099a01a1"
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "size_bytes": 8152,
+      "sha256": "ee7a65c76b08b737a84eae7dbb8709198cec3e8f21b802a15c05039f1d1e9488"
+    },
+    {
+      "path": "tests/test_validation.py",
+      "size_bytes": 5121,
+      "sha256": "b159cb5ce85dcc2b6985d4107343fb7a43c1abe4f14e90908ff422c42c838d6e"
+    },
+    {
+      "path": "reports/test-results.txt",
+      "size_bytes": 110,
+      "sha256": "7c71b319affa918efad7aa0841ec5e43943675a7a2c9d30d641f6b380cff0ed3"
+    },
+    {
+      "path": "reports/pilot-0066-final/summary.json",
+      "size_bytes": 5406,
+      "sha256": "4a05b85a9ba3b665c86d0d4e050ff1051c9b63b9985d6b4a13b38df67c4c1680"
+    },
+    {
+      "path": "reports/findings.md",
+      "size_bytes": 10815,
+      "sha256": "37abcebd8eea6f2f85fee26d4319559a5c9abef63d404b9d0d5c3dff38720953"
+    }
+  ],
+  "packet_sha256": "48a8925e6d4f135ec61e7ba0e97bf8907addbddb1412318ffadd7b6cfed03043",
+  "git": {
+    "head": "82bf6c865b46b5aeb4cd5205671c833766e2c3d6",
+    "dirty": true,
+    "status_porcelain": " M .gitignore\n M README.md\n?? ORCHESTRATION.md\n?? analysis/0066/README.md\n?? analysis/0066/audit.json\n?? analysis/0066/network-column-profile.csv\n?? analysis/0066/overview.png\n?? analysis/0066/track-column-profile.csv\n?? configs/pilot.json\n?? docs/methods.md\n?? docs/modeling-start.md\n?? docs/workflow/decisions.md\n?? docs/workflow/reviews/M0-initial/input.md\n?? docs/workflow/reviews/M0-initial/response.json\n?? docs/workflow/reviews/M0-initial/review.md\n?? docs/workflow/reviews/M0-initial/snapshot.json\n?? docs/workflow/reviews/M0-initial/stderr.txt\n?? docs/workflow/status.md\n?? docs/workflow/tasks/M0.md\n?? docs/workflow/tasks/M1.md\n?? docs/workflow/tasks/implementation-review-prompt.md\n?? pyproject.toml\n?? reports/findings.md\n?? reports/pilot-0066-final/config.json\n?? reports/pilot-0066-final/figures/01-movement.png\n?? reports/pilot-0066-final/figures/01-movement.svg\n?? reports/pilot-0066-final/figures/02-posture.png\n?? reports/pilot-0066-final/figures/02-posture.svg\n?? reports/pilot-0066-final/figures/03-organization.png\n?? reports/pilot-0066-final/figures/03-organization.svg\n?? reports/pilot-0066-final/figures/04-spacing.png\n?? reports/pilot-0066-final/figures/04-spacing.svg\n?? reports/pilot-0066-final/figures/05-visibility.png\n?? reports/pilot-0066-final/figures/05-visibility.svg\n?? reports/pilot-0066-final/figures/video-overlays.png\n?? reports/pilot-0066-final/provenance.json\n?? reports/pilot-0066-final/summary.json\n?? reports/pilot-0066-final/tables/angular-size.csv\n?? reports/pilot-0066-final/tables/collective.csv\n?? reports/pilot-0066-final/tables/curvature-sensitivity.csv\n?? reports/pilot-0066-final/tables/curvature.csv\n?? reports/pilot-0066-final/tables/degree.csv\n?? reports/pilot-0066-final/tables/nearest.csv\n?? reports/pilot-0066-final/tables/spatial-map.csv\n?? reports/pilot-0066-final/tables/speed-sensitivity.csv\n?? reports/pilot-0066-final/tables/speed.csv\n?? reports/pilot-0066-final/tables/threshold-sensitivity.csv\n?? reports/pilot-0066-final/tables/turn.csv\n?? reports/pilot-0066-final/tables/visibility-time.csv\n?? reports/pilot-0066/config.json\n?? reports/pilot-0066/figures/01-movement.png\n?? reports/pilot-0066/figures/01-movement.svg\n?? reports/pilot-0066/figures/02-posture.png\n?? reports/pilot-0066/figures/02-posture.svg\n?? reports/pilot-0066/figures/03-organization.png\n?? reports/pilot-0066/figures/03-organization.svg\n?? reports/pilot-0066/figures/04-spacing.png\n?? reports/pilot-0066/figures/04-spacing.svg\n?? reports/pilot-0066/figures/05-visibility.png\n?? reports/pilot-0066/figures/05-visibility.svg\n?? reports/pilot-0066/figures/video-overlays.png\n?? reports/pilot-0066/provenance.json\n?? reports/pilot-0066/summary.json\n?? reports/pilot-0066/tables/angular-size.csv\n?? reports/pilot-0066/tables/collective.csv\n?? reports/pilot-0066/tables/curvature-sensitivity.csv\n?? reports/pilot-0066/tables/curvature.csv\n?? reports/pilot-0066/tables/degree.csv\n?? reports/pilot-0066/tables/nearest.csv\n?? reports/pilot-0066/tables/spatial-map.csv\n?? reports/pilot-0066/tables/speed-sensitivity.csv\n?? reports/pilot-0066/tables/speed.csv\n?? reports/pilot-0066/tables/threshold-sensitivity.csv\n?? reports/pilot-0066/tables/turn.csv\n?? reports/pilot-0066/tables/visibility-time.csv\n?? reports/pilot-run-final.log\n?? reports/pilot-run.log\n?? reports/test-results.txt\n?? scripts/audit_trial.py\n?? scripts/claude_review.py\n?? scripts/fetch_pilot.py\n?? src/shiners/__init__.py\n?? src/shiners/metrics.py\n?? src/shiners/pilot.py\n?? src/shiners/validation.py\n?? tests/test_claude_review.py\n?? tests/test_fetch_pilot.py\n?? tests/test_metrics.py\n?? tests/test_validation.py\n?? uv.lock",
+    "snapshot_authority": "The listed file hashes and snapshot, including uncommitted files, define the reviewed inputs."
+  },
+  "scope": "tool-free review of explicit text snapshot; no independent command execution",
+  "command": [
+    "claude",
+    "-p",
+    "--output-format",
+    "json",
+    "--tools",
+    "",
+    "--safe-mode",
+    "--strict-mcp-config",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--permission-mode",
+    "dontAsk"
+  ],
+  "requested_model": null,
+  "model_policy": "Claude CLI configured/default model; no fallback requested",
+  "timeout_seconds": 300.0
+}

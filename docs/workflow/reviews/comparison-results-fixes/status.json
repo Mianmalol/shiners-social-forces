@@ -1,0 +1,12 @@
+{
+  "started_at": "2026-11-08T02:48:28.474024+00:00",
+  "state": "response_received",
+  "scientific_acceptance": "not_adjudicated",
+  "returncode": 0,
+  "reported_models": [
+    "claude-opus-5-5"
+  ],
+  "session_id": "4e384202-ff1a-4af0-947a-32d443f75c93",
+  "reported_cost_usd": 0.6947882000000001,
+  "finished_at": "2026-11-08T02:49:30.841976+00:00"
+}

@@ -1,0 +1,205 @@
+{
+  "created_at": "2026-11-08T03:08:13.738528+00:00",
+  "prompt": {
+    "path": "docs/workflow/tasks/publication-review-prompt.md",
+    "size_bytes": 3143,
+    "sha256": "be68eab1beedce39056004b45256297f56d5b41ff531314ee4093aa4d9d88124"
+  },
+  "inputs": [
+    {
+      "path": "README.md",
+      "size_bytes": 10277,
+      "sha256": "62aa50f42fa9e099f81c681e329df8d72d8d25b9884e40fa9912ee46a977f833"
+    },
+    {
+      "path": "ORCHESTRATION.md",
+      "size_bytes": 31084,
+      "sha256": "2da4ada121055dae158dc82c007c21bc9197e92a71058e2da1d305b9cc32aa33"
+    },
+    {
+      "path": "docs/session-summary.md",
+      "size_bytes": 8350,
+      "sha256": "a02295ff312f3cf931d7b25a4b8f62b7d96c58d7c4c2aaa677fc7754e23cb7de"
+    },
+    {
+      "path": "docs/workflow/status.md",
+      "size_bytes": 5536,
+      "sha256": "a85cf85cd737984ed32bca6be77eae52ee92e9c3c57a9493b86c6e67eb35924a"
+    },
+    {
+      "path": "docs/methods.md",
+      "size_bytes": 9453,
+      "sha256": "3d7c9636b6db7c52d30518425896ca22ae10cd4895b3096551c49b803328366a"
+    },
+    {
+      "path": "docs/comparison-methods.md",
+      "size_bytes": 8965,
+      "sha256": "5c2a45ee6d3daaf33fdfe5f88de2a8e6afddcbadc95ba6009f7a5a5ae57ecf5f"
+    },
+    {
+      "path": "reports/comparison/README.md",
+      "size_bytes": 18426,
+      "sha256": "91d560e73ebf91b5a6c5331c3df6fe23e1e7ef35cb99f9c7d76636ad177c873d"
+    },
+    {
+      "path": "reports/comparison/validation.md",
+      "size_bytes": 2330,
+      "sha256": "e2555d389ead1801b6112d55e97f296cc7afdf710997af7bc52623fe6bf2e83d"
+    },
+    {
+      "path": "reports/comparison/validation.json",
+      "size_bytes": 24248,
+      "sha256": "a04cda7bb7ce6b4a44066bcbd2639a9f20b04fdedd68f97300ebfded16c5709e"
+    },
+    {
+      "path": "reports/comparison/tables/trials.csv",
+      "size_bytes": 10943,
+      "sha256": "21e11c008961440aff1ddb8999775a6f1b522c6fc2331c2ff13b03b9946d6c64"
+    },
+    {
+      "path": "reports/comparison/tables/thresholds.csv",
+      "size_bytes": 9625,
+      "sha256": "73aae0b3488b3fb249eba43c615706f281386cd52ab4865d9958dc84dd3bc3de"
+    },
+    {
+      "path": "reports/comparison/tables/threshold-pairs.csv",
+      "size_bytes": 18955,
+      "sha256": "76580ac52025aa5ad306f2f40158d3f49a2f1cb033ce5d308e7255eef1fd5f1f"
+    },
+    {
+      "path": "reports/comparison/tables/circulation-eligibility.json",
+      "size_bytes": 5099,
+      "sha256": "1a7850ec97a12a81bc6133173810434e924ad2fccae40a5f32a01bc70d48b3d0"
+    },
+    {
+      "path": "reports/comparison/tables/circulation-eligibility-manifest.json",
+      "size_bytes": 2029,
+      "sha256": "a4ae13d34c826166c115ddad902c3b15addd5ccb2bd8a203d7be2fa8026413c4"
+    },
+    {
+      "path": "reports/comparison/trials/70-fish__0107/summary.json",
+      "size_bytes": 73039,
+      "sha256": "7df6d26f4f2360fe875676f83f2eb7a2b3f11859c78eb01ff2695f93a461a8b9"
+    },
+    {
+      "path": "reports/comparison/trials/70-fish__0107/config.json",
+      "size_bytes": 693,
+      "sha256": "bd59f69f5d5cde4e2b37f50b14e8d622c49210068a9cab3ddf96740d9458c9e9"
+    },
+    {
+      "path": "reports/comparison/trials/70-fish__0124/summary.json",
+      "size_bytes": 72236,
+      "sha256": "7cc1a242dc0753b80ab331a8e2ce35fa26e812b00d58b5a323803fad66088a47"
+    },
+    {
+      "path": "reports/comparison/trials/70-fish__0124/config.json",
+      "size_bytes": 693,
+      "sha256": "bd59f69f5d5cde4e2b37f50b14e8d622c49210068a9cab3ddf96740d9458c9e9"
+    },
+    {
+      "path": "scripts/plot_eligibility.py",
+      "size_bytes": 12040,
+      "sha256": "78bed0167adb2f6be19b6ab35aff8108aa6cce52cc7544eb83ab5e589432d46b"
+    },
+    {
+      "path": "tests/test_plot_eligibility.py",
+      "size_bytes": 5691,
+      "sha256": "f537132f4b43c193140ec6f2fd2faa1e44a554ebb165ffdc2159665f30ab2ddf"
+    },
+    {
+      "path": "src/shiners/metrics.py",
+      "size_bytes": 16951,
+      "sha256": "72b20c3d6815a6ae607fdce8af61a9c8caa68e2dc2e5e00688c5689fb62a3cc6"
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "size_bytes": 1079,
+      "sha256": "46371da12425397b8987905dc7a591ccad83804dae391813ac1103ddbc342df6"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 358,
+      "sha256": "cee29b563269dd8405fa7e798abadf9c5b36864e15bcfac652435fc4f86b1d4e"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 555,
+      "sha256": "cf6021aefb8f8158cafe1f5f149b77151bf387d87b38d251e2af63a417359a1e"
+    },
+    {
+      "path": "reports/test-results-publication.txt",
+      "size_bytes": 676,
+      "sha256": "b5134e0335327654d94101ecce08255f9853a3dcee6fae2887fff85b3a4c7171"
+    },
+    {
+      "path": "docs/workflow/reviews/comparison-implementation/adjudication.md",
+      "size_bytes": 2893,
+      "sha256": "c571cdc1c035bedd7bad00c6207e940d92eb7106e92e4b31489961ee83d74667"
+    },
+    {
+      "path": "docs/workflow/reviews/comparison-results/adjudication.md",
+      "size_bytes": 2418,
+      "sha256": "bffdd3f1c132b7e68615369733621d4ab76cf1f48fd9094078fdb23be399e530"
+    },
+    {
+      "path": "docs/workflow/reviews/comparison-results-fixes/review.md",
+      "size_bytes": 7200,
+      "sha256": "8ce3cbcb1c95b2af19a96ac20209d62e34a1f7b5d74b1a34956ccab4327bfaef"
+    },
+    {
+      "path": "docs/workflow/reviews/comparison-results-fixes/adjudication.md",
+      "size_bytes": 1643,
+      "sha256": "e9fd088bf50e824bfee7b3dbe75501bbb062863bbb2eecece6f71adfae30430c"
+    },
+    {
+      "path": "scripts/run_comparison.py",
+      "size_bytes": 7391,
+      "sha256": "e00c12b2bda09f72e919a39aba7c99479be0f15693463f8136a6b2b7b3873411"
+    },
+    {
+      "path": "scripts/validate_comparison.py",
+      "size_bytes": 13212,
+      "sha256": "936173518bee38b3311dca1242fa3ac28426b036f38431a904cdbef927c4550c"
+    },
+    {
+      "path": "scripts/fetch_trials.py",
+      "size_bytes": 8617,
+      "sha256": "a78166c58b4a92d6a959a174256db5e6b81c84eae3b4c1d96bd255d68aab3550"
+    },
+    {
+      "path": "scripts/fetch_pilot.py",
+      "size_bytes": 12900,
+      "sha256": "b1caae8a19511ee97938c745273e81240f19b9ea9377c10caedf998b1b634577"
+    },
+    {
+      "path": "scripts/claude_review.py",
+      "size_bytes": 11410,
+      "sha256": "7947656f261fbf50b916d6cac59dafdce0ca4fec942021deceea5fb47eac905e"
+    }
+  ],
+  "packet_sha256": "2b29533af0426185ae335fc7eb14a52fbf02ba03b477a04795bfab05075ec1a1",
+  "git": {
+    "head": "82bf6c865b46b5aeb4cd5205671c833766e2c3d6",
+    "dirty": true,
+    "status_porcelain": "A  .github/workflows/test.yml\nM  .gitignore\nA  ORCHESTRATION.md\nM  README.md\nA  analysis/0066/README.md\nA  analysis/0066/audit.json\nA  analysis/0066/network-column-profile.csv\nA  analysis/0066/overview.png\nA  analysis/0066/track-column-profile.csv\nA  configs/comparison.json\nA  configs/pilot.json\nA  docs/comparison-methods.md\nA  docs/methods.md\nA  docs/modeling-start.md\nAM docs/session-summary.md\nA  docs/workflow/decisions.md\nA  docs/workflow/reviews/M0-initial/input.md\nA  docs/workflow/reviews/M0-initial/response.json\nA  docs/workflow/reviews/M0-initial/review.md\nA  docs/workflow/reviews/M0-initial/snapshot.json\nA  docs/workflow/reviews/M0-initial/stderr.txt\nA  docs/workflow/reviews/M1-fixes/adjudication.md\nA  docs/workflow/reviews/M1-fixes/manifest.json\nA  docs/workflow/reviews/M1-fixes/prompt.md\nA  docs/workflow/reviews/M1-fixes/response.json\nA  docs/workflow/reviews/M1-fixes/review.md\nA  docs/workflow/reviews/M1-fixes/snapshot.txt\nA  docs/workflow/reviews/M1-fixes/status.json\nA  docs/workflow/reviews/M1-fixes/stderr.txt\nA  docs/workflow/reviews/M1-implementation/adjudication.md\nA  docs/workflow/reviews/M1-implementation/executed-run-provenance.json\nA  docs/workflow/reviews/M1-implementation/manifest.json\nA  docs/workflow/reviews/M1-implementation/prompt.md\nA  docs/workflow/reviews/M1-implementation/response.json\nA  docs/workflow/reviews/M1-implementation/review.md\nA  docs/workflow/reviews/M1-implementation/snapshot.txt\nA  docs/workflow/reviews/M1-implementation/status.json\nA  docs/workflow/reviews/M1-implementation/stderr.txt\nA  docs/workflow/reviews/comparison-implementation/adjudication.md\nA  docs/workflow/reviews/comparison-implementation/manifest.json\nA  docs/workflow/reviews/comparison-implementation/prompt.md\nA  docs/workflow/reviews/comparison-implementation/response.json\nA  docs/workflow/reviews/comparison-implementation/review.md\nA  docs/workflow/reviews/comparison-implementation/snapshot.txt\nA  docs/workflow/reviews/comparison-implementation/status.json\nA  docs/workflow/reviews/comparison-implementation/stderr.txt\nA  docs/workflow/reviews/comparison-plan/adjudication.md\nA  docs/workflow/reviews/comparison-plan/manifest.json\nA  docs/workflow/reviews/comparison-plan/prompt.md\nA  docs/workflow/reviews/comparison-plan/response.json\nA  docs/workflow/reviews/comparison-plan/review.md\nA  docs/workflow/reviews/comparison-plan/snapshot.txt\nA  docs/workflow/reviews/comparison-plan/status.json\nA  docs/workflow/reviews/comparison-plan/stderr.txt\nA  docs/workflow/reviews/comparison-results-fixes/adjudication.md\nA  docs/workflow/reviews/comparison-results-fixes/manifest.json\nA  docs/workflow/reviews/comparison-results-fixes/prompt.md\nA  docs/workflow/reviews/comparison-results-fixes/response.json\nA  docs/workflow/reviews/comparison-results-fixes/review.md\nA  docs/workflow/reviews/comparison-results-fixes/snapshot.txt\nA  docs/workflow/reviews/comparison-results-fixes/status.json\nA  docs/workflow/reviews/comparison-results-fixes/stderr.txt\nA  docs/workflow/reviews/comparison-results/adjudication.md\nA  docs/workflow/reviews/comparison-results/manifest.json\nA  docs/workflow/reviews/comparison-results/prompt.md\nA  docs/workflow/reviews/comparison-results/response.json\nA  docs/workflow/reviews/comparison-results/review.md\nA  docs/workflow/reviews/comparison-results/snapshot.txt\nA  docs/workflow/reviews/comparison-results/status.json\nA  docs/workflow/reviews/comparison-results/stderr.txt\nAM docs/workflow/status.md\nA  docs/workflow/tasks/M0.md\nA  docs/workflow/tasks/M1.md\nA  docs/workflow/tasks/comparison-code-review-prompt.md\nA  docs/workflow/tasks/comparison-plan-review-prompt.md\nA  docs/workflow/tasks/comparison-results-fixes-prompt.md\nA  docs/workflow/tasks/comparison-results-review-prompt.md\nA  docs/workflow/tasks/fix-review-prompt.md\nA  docs/workflow/tasks/implementation-review-prompt.md\nA  docs/workflow/tasks/publication-review-prompt.md\nA  pyproject.toml\nA  reports/comparison/README.md\nA  reports/comparison/download-log.txt\nA  reports/comparison/figures/01-alignment-circulation.png\nA  reports/comparison/figures/01-alignment-circulation.svg\nA  reports/comparison/figures/02-circulation-thresholds.png\nA  reports/comparison/figures/02-circulation-thresholds.svg\nA  reports/comparison/figures/03-collective-timelines.png\nA  reports/comparison/figures/03-collective-timelines.svg\nA  reports/comparison/figures/04-other-chapters.png\nA  reports/comparison/figures/04-other-chapters.svg\nA  reports/comparison/figures/05-circulation-eligibility.png\nA  reports/comparison/figures/05-circulation-eligibility.svg\nA  reports/comparison/plot-manifest.json\nA  reports/comparison/run-log.txt\nA  reports/comparison/tables/circulation-eligibility-manifest.json\nA  reports/comparison/tables/circulation-eligibility.json\nA  reports/comparison/tables/metrics.csv\nA  reports/comparison/tables/sensitivity.csv\nA  reports/comparison/tables/threshold-pairs-manifest.json\nA  reports/comparison/tables/threshold-pairs.csv\nA  reports/comparison/tables/thresholds.csv\nA  reports/comparison/tables/trials.csv\nA  reports/comparison/trials/10-fish__0066/config.json\nA  reports/comparison/trials/10-fish__0066/network/angular_size_histogram.csv\nA  reports/comparison/trials/10-fish__0066/network/degree_histogram.csv\nA  reports/comparison/trials/10-fish__0066/provenance.json\nA  reports/comparison/trials/10-fish__0066/summary.json\nA  reports/comparison/trials/10-fish__0066/tables/circulation-histogram.csv\nA  reports/comparison/trials/10-fish__0066/tables/curvature-histogram.csv\nA  reports/comparison/trials/10-fish__0066/tables/curvature-sensitivity.csv\nA  reports/comparison/trials/10-fish__0066/tables/nearest-histogram.csv\nA  reports/comparison/trials/10-fish__0066/tables/polarization-histogram.csv\nA  reports/comparison/trials/10-fish__0066/tables/spatial-map.csv\nA  reports/comparison/trials/10-fish__0066/tables/speed-histogram.csv\nA  reports/comparison/trials/10-fish__0066/tables/speed-sensitivity.csv\nA  reports/comparison/trials/10-fish__0066/tables/turn-histogram.csv\nA  reports/comparison/trials/10-fish__0105/config.json\nA  reports/comparison/trials/10-fish__0105/network/angular_size_histogram.csv\nA  reports/comparison/trials/10-fish__0105/network/degree_histogram.csv\nA  reports/comparison/trials/10-fish__0105/provenance.json\nA  reports/comparison/trials/10-fish__0105/summary.json\nA  reports/comparison/trials/10-fish__0105/tables/circulation-histogram.csv\nA  reports/comparison/trials/10-fish__0105/tables/curvature-histogram.csv\nA  reports/comparison/trials/10-fish__0105/tables/curvature-sensitivity.csv\nA  reports/comparison/trials/10-fish__0105/tables/nearest-histogram.csv\nA  reports/comparison/trials/10-fish__0105/tables/polarization-histogram.csv\nA  reports/comparison/trials/10-fish__0105/tables/spatial-map.csv\nA  reports/comparison/trials/10-fish__0105/tables/speed-histogram.csv\nA  reports/comparison/trials/10-fish__0105/tables/speed-sensitivity.csv\nA  reports/comparison/trials/10-fish__0105/tables/turn-histogram.csv\nA  reports/comparison/trials/10-fish__0126/config.json\nA  reports/comparison/trials/10-fish__0126/network/angular_size_histogram.csv\nA  reports/comparison/trials/10-fish__0126/network/degree_histogram.csv\nA  reports/comparison/trials/10-fish__0126/provenance.json\nA  reports/comparison/trials/10-fish__0126/summary.json\nA  reports/comparison/trials/10-fish__0126/tables/circulation-histogram.csv\nA  reports/comparison/trials/10-fish__0126/tables/curvature-histogram.csv\nA  reports/comparison/trials/10-fish__0126/tables/curvature-sensitivity.csv\nA  reports/comparison/trials/10-fish__0126/tables/nearest-histogram.csv\nA  reports/comparison/trials/10-fish__0126/tables/polarization-histogram.csv\nA  reports/comparison/trials/10-fish__0126/tables/spatial-map.csv\nA  reports/comparison/trials/10-fish__0126/tables/speed-histogram.csv\nA  reports/comparison/trials/10-fish__0126/tables/speed-sensitivity.csv\nA  reports/comparison/trials/10-fish__0126/tables/turn-histogram.csv\nA  reports/comparison/trials/150-fish__150-fish/config.json\nA  reports/comparison/trials/150-fish__150-fish/network/angular_size_histogram.csv\nA  reports/comparison/trials/150-fish__150-fish/network/degree_histogram.csv\nA  reports/comparison/trials/150-fish__150-fish/provenance.json\nA  reports/comparison/trials/150-fish__150-fish/summary.json\nA  reports/comparison/trials/150-fish__150-fish/tables/circulation-histogram.csv\nA  reports/comparison/trials/150-fish__150-fish/tables/curvature-histogram.csv\nA  reports/comparison/trials/150-fish__150-fish/tables/curvature-sensitivity.csv\nA  reports/comparison/trials/150-fish__150-fish/tables/nearest-histogram.csv\nA  reports/comparison/trials/150-fish__150-fish/tables/polarization-histogram.csv\nA  reports/comparison/trials/150-fish__150-fish/tables/spatial-map-Lx1p15.csv\nA  reports/comparison/trials/150-fish__150-fish/tables/spatial-map.csv\nA  reports/comparison/trials/150-fish__150-fish/tables/speed-histogram.csv\nA  reports/comparison/trials/150-fish__150-fish/tables/speed-sensitivity.csv\nA  reports/comparison/trials/150-fish__150-fish/tables/turn-histogram.csv\nA  reports/comparison/trials/30-fish__0084/config.json\nA  reports/comparison/trials/30-fish__0084/network/angular_size_histogram.csv\nA  reports/comparison/trials/30-fish__0084/network/degree_histogram.csv\nA  reports/comparison/trials/30-fish__0084/provenance.json\nA  reports/comparison/trials/30-fish__0084/summary.json\nA  reports/comparison/trials/30-fish__0084/tables/circulation-histogram.csv\nA  reports/comparison/trials/30-fish__0084/tables/curvature-histogram.csv\nA  reports/comparison/trials/30-fish__0084/tables/curvature-sensitivity.csv\nA  reports/comparison/trials/30-fish__0084/tables/nearest-histogram.csv\nA  reports/comparison/trials/30-fish__0084/tables/polarization-histogram.csv\nA  reports/comparison/trials/30-fish__0084/tables/spatial-map.csv\nA  reports/comparison/trials/30-fish__0084/tables/speed-histogram.csv\nA  reports/comparison/trials/30-fish__0084/tables/speed-sensitivity.csv\nA  reports/comparison/trials/30-fish__0084/tables/turn-histogram.csv\nA  reports/comparison/trials/30-fish__0115/config.json\nA  reports/comparison/trials/30-fish__0115/network/angular_size_histogram.csv\nA  reports/comparison/trials/30-fish__0115/network/degree_histogram.csv\nA  reports/comparison/trials/30-fish__0115/provenance.json\nA  reports/comparison/trials/30-fish__0115/summary.json\nA  reports/comparison/trials/30-fish__0115/tables/circulation-histogram.csv\nA  reports/comparison/trials/30-fish__0115/tables/curvature-histogram.csv\nA  reports/comparison/trials/30-fish__0115/tables/curvature-sensitivity.csv\nA  reports/comparison/trials/30-fish__0115/tables/nearest-histogram.csv\nA  reports/comparison/trials/30-fish__0115/tables/polarization-histogram.csv\nA  reports/comparison/trials/30-fish__0115/tables/spatial-map.csv\nA  reports/comparison/trials/30-fish__0115/tables/speed-histogram.csv\nA  reports/comparison/trials/30-fish__0115/tables/speed-sensitivity.csv\nA  reports/comparison/trials/30-fish__0115/tables/turn-histogram.csv\nA  reports/comparison/trials/30-fish__0120/config.json\nA  reports/comparison/trials/30-fish__0120/network/angular_size_histogram.csv\nA  reports/comparison/trials/30-fish__0120/network/degree_histogram.csv\nA  reports/comparison/trials/30-fish__0120/provenance.json\nA  reports/comparison/trials/30-fish__0120/summary.json\nA  reports/comparison/trials/30-fish__0120/tables/circulation-histogram.csv\nA  reports/comparison/trials/30-fish__0120/tables/curvature-histogram.csv\nA  reports/comparison/trials/30-fish__0120/tables/curvature-sensitivity.csv\nA  reports/comparison/trials/30-fish__0120/tables/nearest-histogram.csv\nA  reports/comparison/trials/30-fish__0120/tables/polarization-histogram.csv\nA  reports/comparison/trials/30-fish__0120/tables/spatial-map.csv\nA  reports/comparison/trials/30-fish__0120/tables/speed-histogram.csv\nA  reports/comparison/trials/30-fish__0120/tables/speed-sensitivity.csv\nA  reports/comparison/trials/30-fish__0120/tables/turn-histogram.csv\nA  reports/comparison/trials/70-fish__0103/config.json\nA  reports/comparison/trials/70-fish__0103/network/angular_size_histogram.csv\nA  reports/comparison/trials/70-fish__0103/network/degree_histogram.csv\nA  reports/comparison/trials/70-fish__0103/provenance.json\nA  reports/comparison/trials/70-fish__0103/summary.json\nA  reports/comparison/trials/70-fish__0103/tables/circulation-histogram.csv\nA  reports/comparison/trials/70-fish__0103/tables/curvature-histogram.csv\nA  reports/comparison/trials/70-fish__0103/tables/curvature-sensitivity.csv\nA  reports/comparison/trials/70-fish__0103/tables/nearest-histogram.csv\nA  reports/comparison/trials/70-fish__0103/tables/polarization-histogram.csv\nA  reports/comparison/trials/70-fish__0103/tables/spatial-map.csv\nA  reports/comparison/trials/70-fish__0103/tables/speed-histogram.csv\nA  reports/comparison/trials/70-fish__0103/tables/speed-sensitivity.csv\nA  reports/comparison/trials/70-fish__0103/tables/turn-histogram.csv\nA  reports/comparison/trials/70-fish__0107/config.json\nA  reports/comparison/trials/70-fish__0107/network/angular_size_histogram.csv\nA  reports/comparison/trials/70-fish__0107/network/degree_histogram.csv\nA  reports/comparison/trials/70-fish__0107/provenance.json\nA  reports/comparison/trials/70-fish__0107/summary.json\nA  reports/comparison/trials/70-fish__0107/tables/circulation-histogram.csv\nA  reports/comparison/trials/70-fish__0107/tables/curvature-histogram.csv\nA  reports/comparison/trials/70-fish__0107/tables/curvature-sensitivity.csv\nA  reports/comparison/trials/70-fish__0107/tables/nearest-histogram.csv\nA  reports/comparison/trials/70-fish__0107/tables/polarization-histogram.csv\nA  reports/comparison/trials/70-fish__0107/tables/spatial-map.csv\nA  reports/comparison/trials/70-fish__0107/tables/speed-histogram.csv\nA  reports/comparison/trials/70-fish__0107/tables/speed-sensitivity.csv\nA  reports/comparison/trials/70-fish__0107/tables/turn-histogram.csv\nA  reports/comparison/trials/70-fish__0124/config.json\nA  reports/comparison/trials/70-fish__0124/network/angular_size_histogram.csv\nA  reports/comparison/trials/70-fish__0124/network/degree_histogram.csv\nA  reports/comparison/trials/70-fish__0124/provenance.json\nA  reports/comparison/trials/70-fish__0124/summary.json\nA  reports/comparison/trials/70-fish__0124/tables/circulation-histogram.csv\nA  reports/comparison/trials/70-fish__0124/tables/curvature-histogram.csv\nA  reports/comparison/trials/70-fish__0124/tables/curvature-sensitivity.csv\nA  reports/comparison/trials/70-fish__0124/tables/nearest-histogram.csv\nA  reports/comparison/trials/70-fish__0124/tables/polarization-histogram.csv\nA  reports/comparison/trials/70-fish__0124/tables/spatial-map.csv\nA  reports/comparison/trials/70-fish__0124/tables/speed-histogram.csv\nA  reports/comparison/trials/70-fish__0124/tables/speed-sensitivity.csv\nA  reports/comparison/trials/70-fish__0124/tables/turn-histogram.csv\nA  reports/comparison/validation-log.txt\nA  reports/comparison/validation.json\nA  reports/comparison/validation.md\nA  reports/findings.md\nA  reports/pilot-0066-reviewed/config.json\nA  reports/pilot-0066-reviewed/figures/01-movement.png\nA  reports/pilot-0066-reviewed/figures/01-movement.svg\nA  reports/pilot-0066-reviewed/figures/02-posture.png\nA  reports/pilot-0066-reviewed/figures/02-posture.svg\nA  reports/pilot-0066-reviewed/figures/03-organization.png\nA  reports/pilot-0066-reviewed/figures/03-organization.svg\nA  reports/pilot-0066-reviewed/figures/04-spacing.png\nA  reports/pilot-0066-reviewed/figures/04-spacing.svg\nA  reports/pilot-0066-reviewed/figures/05-visibility.png\nA  reports/pilot-0066-reviewed/figures/05-visibility.svg\nA  reports/pilot-0066-reviewed/figures/video-overlays.png\nA  reports/pilot-0066-reviewed/provenance.json\nA  reports/pilot-0066-reviewed/summary.json\nA  reports/pilot-0066-reviewed/tables/angular-size.csv\nA  reports/pilot-0066-reviewed/tables/collective.csv\nA  reports/pilot-0066-reviewed/tables/curvature-sensitivity.csv\nA  reports/pilot-0066-reviewed/tables/curvature.csv\nA  reports/pilot-0066-reviewed/tables/degree.csv\nA  reports/pilot-0066-reviewed/tables/nearest.csv\nA  reports/pilot-0066-reviewed/tables/spatial-map.csv\nA  reports/pilot-0066-reviewed/tables/speed-sensitivity.csv\nA  reports/pilot-0066-reviewed/tables/speed.csv\nA  reports/pilot-0066-reviewed/tables/threshold-sensitivity.csv\nA  reports/pilot-0066-reviewed/tables/turn.csv\nA  reports/pilot-0066-reviewed/tables/visibility-time.csv\nA  reports/pilot-run-reviewed.log\nA  reports/test-results-comparison.txt\nA  reports/test-results-final.txt\nA  reports/test-results-publication.txt\nA  reports/test-results.txt\nA  scripts/audit_trial.py\nA  scripts/claude_review.py\nA  scripts/compare_threshold_pairs.py\nA  scripts/fetch_pilot.py\nA  scripts/fetch_trials.py\nA  scripts/plot_comparison.py\nA  scripts/plot_eligibility.py\nA  scripts/run_comparison.py\nA  scripts/validate_comparison.py\nA  src/shiners/__init__.py\nA  src/shiners/compare_trial.py\nA  src/shiners/metrics.py\nA  src/shiners/network_summary.py\nA  src/shiners/pilot.py\nA  src/shiners/validation.py\nA  tests/test_claude_review.py\nA  tests/test_compare_threshold_pairs.py\nA  tests/test_compare_trial.py\nA  tests/test_fetch_pilot.py\nA  tests/test_fetch_trials.py\nA  tests/test_metrics.py\nA  tests/test_network_summary.py\nA  tests/test_plot_comparison.py\nA  tests/test_plot_eligibility.py\nA  tests/test_run_comparison.py\nA  tests/test_validation.py\nA  uv.lock",
+    "snapshot_authority": "The listed file hashes and snapshot, including uncommitted files, define the reviewed inputs."
+  },
+  "scope": "tool-free review of explicit text snapshot; no independent command execution",
+  "command": [
+    "claude",
+    "-p",
+    "--output-format",
+    "json",
+    "--tools",
+    "",
+    "--safe-mode",
+    "--strict-mcp-config",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--permission-mode",
+    "dontAsk"
+  ],
+  "requested_model": null,
+  "model_policy": "Claude CLI configured/default model; no fallback requested",
+  "timeout_seconds": 600.0
+}

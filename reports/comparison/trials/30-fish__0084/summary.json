@@ -1,0 +1,2966 @@
+{
+  "trial": "30-fish/0084",
+  "group": "30-fish",
+  "sequence": "0084",
+  "fish": 30,
+  "quality": {
+    "track_rows": 737790,
+    "fish": 30,
+    "frames": 24593,
+    "frame_range": [
+      1,
+      24599
+    ],
+    "time_range_s": [
+      0.033366700033366704,
+      820.7874541207875
+    ],
+    "duration_s": 820.7540874207541,
+    "fps_from_track_timestamps": 29.970000000004266,
+    "segment_count": 7,
+    "continuous_blocks": [
+      {
+        "segment": 0,
+        "first_frame": 1,
+        "last_frame": 3596,
+        "frames": 3596
+      },
+      {
+        "segment": 1,
+        "first_frame": 3598,
+        "last_frame": 7192,
+        "frames": 3595
+      },
+      {
+        "segment": 2,
+        "first_frame": 7194,
+        "last_frame": 10789,
+        "frames": 3596
+      },
+      {
+        "segment": 3,
+        "first_frame": 10791,
+        "last_frame": 14385,
+        "frames": 3595
+      },
+      {
+        "segment": 4,
+        "first_frame": 14387,
+        "last_frame": 17981,
+        "frames": 3595
+      },
+      {
+        "segment": 5,
+        "first_frame": 17983,
+        "last_frame": 21578,
+        "frames": 3596
+      },
+      {
+        "segment": 6,
+        "first_frame": 21580,
+        "last_frame": 24599,
+        "frames": 3020
+      }
+    ],
+    "missing_frames_inside_range": 6,
+    "nonpositive_length_rows": 2,
+    "nonpositive_length_frame_count": 1,
+    "nonpositive_length_frames": [
+      10791
+    ],
+    "nonpositive_length_observations": [
+      {
+        "frame": 10791,
+        "id": 24,
+        "segment": 3,
+        "time": 360.0600600600601,
+        "body_length": 0.0
+      },
+      {
+        "frame": 10791,
+        "id": 27,
+        "segment": 3,
+        "time": 360.0600600600601,
+        "body_length": 0.0
+      }
+    ],
+    "nonpositive_length_policy": "Reference length uses positive values only; curvature is explicitly undefined for nonpositive-length rows. Finite measured positions/headings remain in primary metrics. A separate full-frame exclusion sensitivity recomputes kinematics with gap guards.",
+    "checked_columns": [
+      "frame",
+      "id",
+      "segment",
+      "time",
+      "X",
+      "Y",
+      "ANGLE",
+      "body_length",
+      "group",
+      "sequence",
+      "poseX0",
+      "poseX6",
+      "poseX7",
+      "poseX8",
+      "poseX9",
+      "poseX10",
+      "poseX11",
+      "poseX12",
+      "poseX13",
+      "poseX14",
+      "poseX20",
+      "poseY0",
+      "poseY6",
+      "poseY7",
+      "poseY8",
+      "poseY9",
+      "poseY10",
+      "poseY11",
+      "poseY12",
+      "poseY13",
+      "poseY14",
+      "poseY20"
+    ],
+    "qc_scope": "Projected measurement inputs only; unselected pose/eye columns are not audited.",
+    "passed": [
+      "finite required numeric fields",
+      "unique track keys",
+      "complete fish set",
+      "positive reference length available; nonpositive values disclosed",
+      "single trial",
+      "consistent per-frame time/segment",
+      "monotone times/segments",
+      "regular within-block timestamps"
+    ]
+  },
+  "scope": "All valid observations of this trial; descriptive estimates, not independent samples or causal effects.",
+  "length_scale_px": 38.690481371143946,
+  "body_length_px": {
+    "n": 737790,
+    "0.05": 30.162532689547458,
+    "0.5": 38.690476408439324,
+    "0.95": 49.49528647157544
+  },
+  "speed_bl_s": {
+    "n": 735270,
+    "0.05": 0.1297783477770124,
+    "0.5": 1.3783031236892884,
+    "0.95": 4.361141404350938
+  },
+  "acceleration_bl_s2": {
+    "n": 735270,
+    "0.05": 0.3139280082896892,
+    "0.5": 2.0638491131318895,
+    "0.95": 8.8962660618221
+  },
+  "turn_rate_rad_s": {
+    "n": 734766,
+    "0.05": -2.078327382957869,
+    "0.5": -0.01688566117983231,
+    "0.95": 1.7281783352059774
+  },
+  "slip_rad": {
+    "n": 590729,
+    "0.05": -0.24122127409575353,
+    "0.5": 0.02343303047282767,
+    "0.95": 0.3449836317131422
+  },
+  "curvature_times_L": {
+    "n": 737788,
+    "0.05": -0.6173637213973291,
+    "0.5": 0.06006669439972541,
+    "0.95": 0.7958080561007701
+  },
+  "curvature_sensitivity": [
+    {
+      "neighborhood": 5,
+      "n": 737788,
+      "0.05": -0.6268559667535579,
+      "0.5": 0.06046565197148639,
+      "0.95": 0.8066736261874332
+    },
+    {
+      "neighborhood": 7,
+      "n": 737788,
+      "0.05": -0.6173637213973291,
+      "0.5": 0.06006669439972541,
+      "0.95": 0.7958080561007701
+    },
+    {
+      "neighborhood": 9,
+      "n": 737788,
+      "0.05": -0.6047144540970254,
+      "0.5": 0.05939287105736589,
+      "0.95": 0.7817794394781973
+    }
+  ],
+  "speed_sensitivity": [
+    {
+      "window": 7,
+      "n": 734430,
+      "0.05": 0.14293081025812163,
+      "0.5": 1.3912874830794053,
+      "0.95": 4.39236546428637
+    },
+    {
+      "window": 11,
+      "n": 734430,
+      "0.05": 0.12980522875094114,
+      "0.5": 1.378945469744574,
+      "0.95": 4.36167385011437
+    },
+    {
+      "window": 15,
+      "n": 734430,
+      "0.05": 0.12386890937353634,
+      "0.5": 1.3744489110439888,
+      "0.95": 4.344018855555081
+    }
+  ],
+  "polarization": {
+    "n": 24379,
+    "0.05": 0.2865202883660525,
+    "0.5": 0.8273422479928021,
+    "0.95": 0.9793338893573186
+  },
+  "circulation": {
+    "n": 10841,
+    "0.05": 0.027727667476862037,
+    "0.5": 0.2678104614379456,
+    "0.95": 0.6007938488043424
+  },
+  "signed_circulation": {
+    "n": 10841,
+    "0.05": -0.5981219583019002,
+    "0.5": -0.18954568627453447,
+    "0.95": 0.3731219740139555
+  },
+  "spread_bl": {
+    "n": 24509,
+    "0.05": 2.302288542747625,
+    "0.5": 3.706586659690702,
+    "0.95": 6.8934003156804415
+  },
+  "centroid_speed_bl_s": {
+    "n": 24509,
+    "0.05": 0.1676282686410832,
+    "0.5": 1.2289923241127954,
+    "0.95": 3.478194113721555
+  },
+  "nearest_neighbor_bl": {
+    "n": 737790,
+    "0.05": 0.3528647521677384,
+    "0.5": 0.968407269123591,
+    "0.95": 2.1652559653573316
+  },
+  "threshold_sensitivity": [
+    {
+      "threshold_bl_s": 0.25,
+      "tracked_frames": 24593,
+      "circulation_valid_frames": 21240,
+      "circulation_eligible_frame_fraction": 0.8636603911682186,
+      "joint_valid_frames": 21026,
+      "joint_eligible_frame_fraction": 0.8549587280933599,
+      "circulation": {
+        "n": 21240,
+        "0.05": 0.023756957146881374,
+        "0.5": 0.24740293763625548,
+        "0.95": 0.593039524087795
+      },
+      "circulation_median": 0.24740293763625548,
+      "signed_circulation": {
+        "n": 21240,
+        "0.05": -0.5797789543267494,
+        "0.5": -0.15815781376949456,
+        "0.95": 0.37464379963604344
+      },
+      "polarization": {
+        "n": 24379,
+        "0.05": 0.2865202883660525,
+        "0.5": 0.8273422479928021,
+        "0.95": 0.9793338893573186
+      },
+      "polarization_valid_frames": 24379,
+      "polarization_eligible_frame_fraction": 0.9912983369251414,
+      "polarization_when_circulation_eligible": {
+        "n": 21026,
+        "0.05": 0.37184183939405546,
+        "0.5": 0.8542335729137377,
+        "0.95": 0.9807608172254831
+      },
+      "polarization_when_circulation_ineligible_or_unknown": {
+        "n": 3353,
+        "0.05": 0.0807184742336291,
+        "0.5": 0.47362038765504383,
+        "0.95": 0.9172404525489346
+      },
+      "eligible_fish_fraction": {
+        "n": 24509,
+        "0.05": 0.6,
+        "0.5": 0.9333333333333333,
+        "0.95": 1.0
+      },
+      "iid_direction_reference": {
+        "n": 21240,
+        "0.05": 0.10300645387285057,
+        "0.5": 0.10662180931146154,
+        "0.95": 0.11283791670955126
+      }
+    },
+    {
+      "threshold_bl_s": 0.5,
+      "tracked_frames": 24593,
+      "circulation_valid_frames": 10841,
+      "circulation_eligible_frame_fraction": 0.44081649249786525,
+      "joint_valid_frames": 10658,
+      "joint_eligible_frame_fraction": 0.4333753507095515,
+      "circulation": {
+        "n": 10841,
+        "0.05": 0.027727667476862037,
+        "0.5": 0.2678104614379456,
+        "0.95": 0.6007938488043424
+      },
+      "circulation_median": 0.2678104614379456,
+      "signed_circulation": {
+        "n": 10841,
+        "0.05": -0.5981219583019002,
+        "0.5": -0.18954568627453447,
+        "0.95": 0.3731219740139555
+      },
+      "polarization": {
+        "n": 24379,
+        "0.05": 0.2865202883660525,
+        "0.5": 0.8273422479928021,
+        "0.95": 0.9793338893573186
+      },
+      "polarization_valid_frames": 24379,
+      "polarization_eligible_frame_fraction": 0.9912983369251414,
+      "polarization_when_circulation_eligible": {
+        "n": 10658,
+        "0.05": 0.47836647695750895,
+        "0.5": 0.8960305745592507,
+        "0.95": 0.9828899215627811
+      },
+      "polarization_when_circulation_ineligible_or_unknown": {
+        "n": 13721,
+        "0.05": 0.1871071520640854,
+        "0.5": 0.7320549586700897,
+        "0.95": 0.9718126187861359
+      },
+      "eligible_fish_fraction": {
+        "n": 24509,
+        "0.05": 0.26666666666666666,
+        "0.5": 0.7666666666666667,
+        "0.95": 0.9666666666666667
+      },
+      "iid_direction_reference": {
+        "n": 10841,
+        "0.05": 0.10476737551287066,
+        "0.5": 0.11064668061060753,
+        "0.95": 0.11516471649044516
+      }
+    },
+    {
+      "threshold_bl_s": 1.0,
+      "tracked_frames": 24593,
+      "circulation_valid_frames": 594,
+      "circulation_eligible_frame_fraction": 0.02415321432928069,
+      "joint_valid_frames": 504,
+      "joint_eligible_frame_fraction": 0.020493636400601797,
+      "circulation": {
+        "n": 594,
+        "0.05": 0.018412783789791456,
+        "0.5": 0.4180019249181976,
+        "0.95": 0.6716989261003905
+      },
+      "circulation_median": 0.4180019249181976,
+      "signed_circulation": {
+        "n": 594,
+        "0.05": -0.6714318123222657,
+        "0.5": -0.21106743940230366,
+        "0.95": 0.539667280473141
+      },
+      "polarization": {
+        "n": 24379,
+        "0.05": 0.2865202883660525,
+        "0.5": 0.8273422479928021,
+        "0.95": 0.9793338893573186
+      },
+      "polarization_valid_frames": 24379,
+      "polarization_eligible_frame_fraction": 0.9912983369251414,
+      "polarization_when_circulation_eligible": {
+        "n": 504,
+        "0.05": 0.3826807303800733,
+        "0.5": 0.7889044904220228,
+        "0.95": 0.959293259555621
+      },
+      "polarization_when_circulation_ineligible_or_unknown": {
+        "n": 23875,
+        "0.05": 0.2851539856304394,
+        "0.5": 0.8283375051970739,
+        "0.95": 0.9795693192955385
+      },
+      "eligible_fish_fraction": {
+        "n": 24509,
+        "0.05": 0.06666666666666667,
+        "0.5": 0.36666666666666664,
+        "0.95": 0.7
+      },
+      "iid_direction_reference": {
+        "n": 594,
+        "0.05": 0.10300645387285057,
+        "0.5": 0.11064668061060753,
+        "0.95": 0.11516471649044516
+      }
+    }
+  ],
+  "threshold_common_eligible": {
+    "common_frames": 504,
+    "common_fraction": 0.020493636400601797,
+    "require_valid_polarization": true,
+    "definition": "Same frames eligible for every setting; eligible fish may differ. For threshold sweeps this is a selected high-relative-motion subset, not representative of the trial.",
+    "settings": [
+      {
+        "threshold_bl_s": 0.25,
+        "circulation": {
+          "n": 504,
+          "0.05": 0.022677604352862556,
+          "0.5": 0.4081950539824373,
+          "0.95": 0.6414623739136288
+        },
+        "signed_circulation": {
+          "n": 504,
+          "0.05": -0.6414623739136288,
+          "0.5": -0.24673592994985943,
+          "0.95": 0.5084812744449712
+        },
+        "polarization": {
+          "n": 504,
+          "0.05": 0.3826807303800733,
+          "0.5": 0.7889044904220228,
+          "0.95": 0.959293259555621
+        }
+      },
+      {
+        "threshold_bl_s": 0.5,
+        "circulation": {
+          "n": 504,
+          "0.05": 0.019651073766368012,
+          "0.5": 0.41741935487095505,
+          "0.95": 0.6579113767585013
+        },
+        "signed_circulation": {
+          "n": 504,
+          "0.05": -0.6579113767585013,
+          "0.5": -0.25223634661441763,
+          "0.95": 0.5106638521501996
+        },
+        "polarization": {
+          "n": 504,
+          "0.05": 0.3826807303800733,
+          "0.5": 0.7889044904220228,
+          "0.95": 0.959293259555621
+        }
+      },
+      {
+        "threshold_bl_s": 1.0,
+        "circulation": {
+          "n": 504,
+          "0.05": 0.021929030063759354,
+          "0.5": 0.44855224307872377,
+          "0.95": 0.6845012034395634
+        },
+        "signed_circulation": {
+          "n": 504,
+          "0.05": -0.6845012034395634,
+          "0.5": -0.2730653068312541,
+          "0.95": 0.5504834445046092
+        },
+        "polarization": {
+          "n": 504,
+          "0.05": 0.3826807303800733,
+          "0.5": 0.7889044904220228,
+          "0.95": 0.959293259555621
+        }
+      }
+    ]
+  },
+  "threshold_circulation_common_eligible": {
+    "common_frames": 594,
+    "common_fraction": 0.02415321432928069,
+    "require_valid_polarization": false,
+    "definition": "Same frames eligible for every setting; eligible fish may differ. For threshold sweeps this is a selected high-relative-motion subset, not representative of the trial.",
+    "settings": [
+      {
+        "threshold_bl_s": 0.25,
+        "circulation": {
+          "n": 594,
+          "0.05": 0.018874109771995398,
+          "0.5": 0.3684078965805482,
+          "0.95": 0.6372027321689581
+        },
+        "signed_circulation": {
+          "n": 594,
+          "0.05": -0.6372027321689581,
+          "0.5": -0.19962459099035829,
+          "0.95": 0.49298283114631486
+        },
+        "polarization": {
+          "n": 504,
+          "0.05": 0.3826807303800733,
+          "0.5": 0.7889044904220228,
+          "0.95": 0.959293259555621
+        }
+      },
+      {
+        "threshold_bl_s": 0.5,
+        "circulation": {
+          "n": 594,
+          "0.05": 0.016635220454862574,
+          "0.5": 0.3840829653978891,
+          "0.95": 0.6512864401093423
+        },
+        "signed_circulation": {
+          "n": 594,
+          "0.05": -0.6512864401093423,
+          "0.5": -0.2029857032834576,
+          "0.95": 0.5046595444812683
+        },
+        "polarization": {
+          "n": 504,
+          "0.05": 0.3826807303800733,
+          "0.5": 0.7889044904220228,
+          "0.95": 0.959293259555621
+        }
+      },
+      {
+        "threshold_bl_s": 1.0,
+        "circulation": {
+          "n": 594,
+          "0.05": 0.018412783789791456,
+          "0.5": 0.4180019249181976,
+          "0.95": 0.6716989261003905
+        },
+        "signed_circulation": {
+          "n": 594,
+          "0.05": -0.6714318123222657,
+          "0.5": -0.21106743940230366,
+          "0.95": 0.539667280473141
+        },
+        "polarization": {
+          "n": 504,
+          "0.05": 0.3826807303800733,
+          "0.5": 0.7889044904220228,
+          "0.95": 0.959293259555621
+        }
+      }
+    ]
+  },
+  "threshold_frame_selection": {
+    "baseline_threshold_bl_s": 0.5,
+    "settings": [
+      {
+        "threshold_frame_set_bl_s": 0.25,
+        "candidate_frames": 21240,
+        "baseline_valid_frames": 10841,
+        "baseline_undefined_frames": 10399,
+        "baseline_circulation": {
+          "n": 10841,
+          "0.05": 0.027727667476862037,
+          "0.5": 0.2678104614379456,
+          "0.95": 0.6007938488043424
+        },
+        "baseline_signed_circulation": {
+          "n": 10841,
+          "0.05": -0.5981219583019002,
+          "0.5": -0.18954568627453447,
+          "0.95": 0.3731219740139555
+        }
+      },
+      {
+        "threshold_frame_set_bl_s": 0.5,
+        "candidate_frames": 10841,
+        "baseline_valid_frames": 10841,
+        "baseline_undefined_frames": 0,
+        "baseline_circulation": {
+          "n": 10841,
+          "0.05": 0.027727667476862037,
+          "0.5": 0.2678104614379456,
+          "0.95": 0.6007938488043424
+        },
+        "baseline_signed_circulation": {
+          "n": 10841,
+          "0.05": -0.5981219583019002,
+          "0.5": -0.18954568627453447,
+          "0.95": 0.3731219740139555
+        }
+      },
+      {
+        "threshold_frame_set_bl_s": 1.0,
+        "candidate_frames": 594,
+        "baseline_valid_frames": 594,
+        "baseline_undefined_frames": 0,
+        "baseline_circulation": {
+          "n": 594,
+          "0.05": 0.016635220454862574,
+          "0.5": 0.3840829653978891,
+          "0.95": 0.6512864401093423
+        },
+        "baseline_signed_circulation": {
+          "n": 594,
+          "0.05": -0.6512864401093423,
+          "0.5": -0.2029857032834576,
+          "0.95": 0.5046595444812683
+        }
+      }
+    ],
+    "interpretation": "Fixed baseline C sampled on each threshold-eligible frame set. Frames where baseline C is undefined are counted and excluded; especially relevant to the lower-threshold set."
+  },
+  "window_sensitivity": [
+    {
+      "window": 7,
+      "tracked_frames": 24593,
+      "circulation_valid_frames": 11374,
+      "circulation_eligible_frame_fraction": 0.46248932623104133,
+      "joint_valid_frames": 11231,
+      "joint_eligible_frame_fraction": 0.4566746635221404,
+      "circulation": {
+        "n": 11374,
+        "0.05": 0.02535529824394394,
+        "0.5": 0.25533950861747806,
+        "0.95": 0.5916402780889746
+      },
+      "circulation_median": 0.25533950861747806,
+      "signed_circulation": {
+        "n": 11374,
+        "0.05": -0.5875033395561748,
+        "0.5": -0.17430385657389363,
+        "0.95": 0.36577412822123
+      },
+      "polarization": {
+        "n": 24435,
+        "0.05": 0.2864441498021154,
+        "0.5": 0.8273182116054575,
+        "0.95": 0.979308015507556
+      },
+      "polarization_valid_frames": 24435,
+      "polarization_eligible_frame_fraction": 0.9935754076363192,
+      "polarization_when_circulation_eligible": {
+        "n": 11231,
+        "0.05": 0.4771263690443917,
+        "0.5": 0.8979721057879828,
+        "0.95": 0.9832959496535543
+      },
+      "polarization_when_circulation_ineligible_or_unknown": {
+        "n": 13204,
+        "0.05": 0.18290524998686938,
+        "0.5": 0.7207534282121106,
+        "0.95": 0.9680236375289418
+      },
+      "eligible_fish_fraction": {
+        "n": 24537,
+        "0.05": 0.26666666666666666,
+        "0.5": 0.7666666666666667,
+        "0.95": 0.9666666666666667
+      },
+      "iid_direction_reference": {
+        "n": 11374,
+        "0.05": 0.10476737551287066,
+        "0.5": 0.11064668061060753,
+        "0.95": 0.11516471649044516
+      }
+    },
+    {
+      "window": 11,
+      "tracked_frames": 24593,
+      "circulation_valid_frames": 10841,
+      "circulation_eligible_frame_fraction": 0.44081649249786525,
+      "joint_valid_frames": 10658,
+      "joint_eligible_frame_fraction": 0.4333753507095515,
+      "circulation": {
+        "n": 10841,
+        "0.05": 0.027727667476862037,
+        "0.5": 0.2678104614379456,
+        "0.95": 0.6007938488043424
+      },
+      "circulation_median": 0.2678104614379456,
+      "signed_circulation": {
+        "n": 10841,
+        "0.05": -0.5981219583019002,
+        "0.5": -0.18954568627453447,
+        "0.95": 0.3731219740139555
+      },
+      "polarization": {
+        "n": 24379,
+        "0.05": 0.2865202883660525,
+        "0.5": 0.8273422479928021,
+        "0.95": 0.9793338893573186
+      },
+      "polarization_valid_frames": 24379,
+      "polarization_eligible_frame_fraction": 0.9912983369251414,
+      "polarization_when_circulation_eligible": {
+        "n": 10658,
+        "0.05": 0.47836647695750895,
+        "0.5": 0.8960305745592507,
+        "0.95": 0.9828899215627811
+      },
+      "polarization_when_circulation_ineligible_or_unknown": {
+        "n": 13721,
+        "0.05": 0.1871071520640854,
+        "0.5": 0.7320549586700897,
+        "0.95": 0.9718126187861359
+      },
+      "eligible_fish_fraction": {
+        "n": 24509,
+        "0.05": 0.26666666666666666,
+        "0.5": 0.7666666666666667,
+        "0.95": 0.9666666666666667
+      },
+      "iid_direction_reference": {
+        "n": 10841,
+        "0.05": 0.10476737551287066,
+        "0.5": 0.11064668061060753,
+        "0.95": 0.11516471649044516
+      }
+    },
+    {
+      "window": 15,
+      "tracked_frames": 24593,
+      "circulation_valid_frames": 10485,
+      "circulation_eligible_frame_fraction": 0.42634082869109097,
+      "joint_valid_frames": 10250,
+      "joint_eligible_frame_fraction": 0.41678526409954053,
+      "circulation": {
+        "n": 10485,
+        "0.05": 0.028101173420976757,
+        "0.5": 0.27460221941393365,
+        "0.95": 0.6076870424470694
+      },
+      "circulation_median": 0.27460221941393365,
+      "signed_circulation": {
+        "n": 10485,
+        "0.05": -0.6050158844360294,
+        "0.5": -0.194230708851965,
+        "0.95": 0.3791437188896465
+      },
+      "polarization": {
+        "n": 24323,
+        "0.05": 0.2866290014331706,
+        "0.5": 0.8274040278083811,
+        "0.95": 0.9793453860752445
+      },
+      "polarization_valid_frames": 24323,
+      "polarization_eligible_frame_fraction": 0.9890212662139634,
+      "polarization_when_circulation_eligible": {
+        "n": 10250,
+        "0.05": 0.47591701007346676,
+        "0.5": 0.8944770455597729,
+        "0.95": 0.9820553133308636
+      },
+      "polarization_when_circulation_ineligible_or_unknown": {
+        "n": 14073,
+        "0.05": 0.20059403239070006,
+        "0.5": 0.7414019915365451,
+        "0.95": 0.9749279762630124
+      },
+      "eligible_fish_fraction": {
+        "n": 24481,
+        "0.05": 0.26666666666666666,
+        "0.5": 0.7666666666666667,
+        "0.95": 0.9333333333333333
+      },
+      "iid_direction_reference": {
+        "n": 10485,
+        "0.05": 0.10476737551287066,
+        "0.5": 0.11064668061060753,
+        "0.95": 0.11516471649044516
+      }
+    }
+  ],
+  "window_common_eligible": {
+    "common_frames": 9324,
+    "common_fraction": 0.37913227341113326,
+    "require_valid_polarization": true,
+    "definition": "Same frames eligible for every setting; eligible fish may differ. For threshold sweeps this is a selected high-relative-motion subset, not representative of the trial.",
+    "settings": [
+      {
+        "window": 7.0,
+        "circulation": {
+          "n": 9324,
+          "0.05": 0.027432955246692578,
+          "0.5": 0.2666434955258453,
+          "0.95": 0.5989596042409079
+        },
+        "signed_circulation": {
+          "n": 9324,
+          "0.05": -0.5961024602408315,
+          "0.5": -0.19197895469585136,
+          "0.95": 0.37142469560238867
+        },
+        "polarization": {
+          "n": 9324,
+          "0.05": 0.4787861107415737,
+          "0.5": 0.8952236475581932,
+          "0.95": 0.9820875575508963
+        }
+      },
+      {
+        "window": 11.0,
+        "circulation": {
+          "n": 9324,
+          "0.05": 0.029669951012019313,
+          "0.5": 0.27552199305039493,
+          "0.95": 0.6063845160801942
+        },
+        "signed_circulation": {
+          "n": 9324,
+          "0.05": -0.6044346783160711,
+          "0.5": -0.19946127642498462,
+          "0.95": 0.3780915977862
+        },
+        "polarization": {
+          "n": 9324,
+          "0.05": 0.4787861107415737,
+          "0.5": 0.8952236475581932,
+          "0.95": 0.9820875575508963
+        }
+      },
+      {
+        "window": 15.0,
+        "circulation": {
+          "n": 9324,
+          "0.05": 0.029917686696218197,
+          "0.5": 0.28129129484721194,
+          "0.95": 0.6095957417525227
+        },
+        "signed_circulation": {
+          "n": 9324,
+          "0.05": -0.6071663329503408,
+          "0.5": -0.20210780174126827,
+          "0.95": 0.38459933337521884
+        },
+        "polarization": {
+          "n": 9324,
+          "0.05": 0.4787861107415737,
+          "0.5": 0.8952236475581932,
+          "0.95": 0.9820875575508963
+        }
+      }
+    ]
+  },
+  "leave_one_out_threshold_sensitivity": {
+    "effective_all_mean_cutoff_bl_s": 0.48333333333333334,
+    "other_fish_cutoff_bl_s": 0.5,
+    "interpretation": "Speed-threshold equivalent to subtracting the other-fish mean; directions and primary measurements unchanged. The tiny radius eligibility tolerance is retained.",
+    "tracked_frames": 24593,
+    "circulation_valid_frames": 11561,
+    "circulation_eligible_frame_fraction": 0.4700931159272964,
+    "joint_valid_frames": 11373,
+    "joint_eligible_frame_fraction": 0.462448664254056,
+    "circulation": {
+      "n": 11561,
+      "0.05": 0.02810288437211418,
+      "0.5": 0.26598008218222186,
+      "0.95": 0.5981344150506419
+    },
+    "circulation_median": 0.26598008218222186,
+    "signed_circulation": {
+      "n": 11561,
+      "0.05": -0.5938411532912492,
+      "0.5": -0.18647774390643737,
+      "0.95": 0.37508761107154387
+    },
+    "polarization": {
+      "n": 24379,
+      "0.05": 0.2865202883660525,
+      "0.5": 0.8273422479928021,
+      "0.95": 0.9793338893573186
+    },
+    "polarization_valid_frames": 24379,
+    "polarization_eligible_frame_fraction": 0.9912983369251414,
+    "polarization_when_circulation_eligible": {
+      "n": 11373,
+      "0.05": 0.4764886134682777,
+      "0.5": 0.895059981678649,
+      "0.95": 0.9829076587519506
+    },
+    "polarization_when_circulation_ineligible_or_unknown": {
+      "n": 13006,
+      "0.05": 0.17947209865361965,
+      "0.5": 0.719933816940827,
+      "0.95": 0.970454042313143
+    },
+    "eligible_fish_fraction": {
+      "n": 24509,
+      "0.05": 0.26666666666666666,
+      "0.5": 0.7666666666666667,
+      "0.95": 0.9666666666666667
+    },
+    "iid_direction_reference": {
+      "n": 11561,
+      "0.05": 0.10476737551287066,
+      "0.5": 0.11064668061060753,
+      "0.95": 0.11516471649044516
+    }
+  },
+  "scale_sensitivity_151": null,
+  "matched_duration_sensitivity": {
+    "target_frame_count": 17999,
+    "frame_count": 17999,
+    "frame_start": 1,
+    "frame_end": 18004,
+    "duration_s": 600.7007007007006,
+    "reference_length_px": 38.690481371143946,
+    "speed_bl_s": {
+      "n": 537810,
+      "0.05": 0.2904135763900908,
+      "0.5": 1.70321403319508,
+      "0.95": 4.532722124481528
+    },
+    "acceleration_bl_s2": {
+      "n": 537810,
+      "0.05": 0.436840397108192,
+      "0.5": 2.44908400241488,
+      "0.95": 9.312764197263663
+    },
+    "turn_rate_rad_s": {
+      "n": 537378,
+      "0.05": -2.220582190978071,
+      "0.5": -0.019989360735249796,
+      "0.95": 1.8558683247227332
+    },
+    "slip_rad": {
+      "n": 479348,
+      "0.05": -0.23287338093327725,
+      "0.5": 0.023886486669185913,
+      "0.95": 0.33347735922065336
+    },
+    "curvature_times_L": {
+      "n": 539968,
+      "0.05": -0.6560025438978617,
+      "0.5": 0.069367395234917,
+      "0.95": 0.8281743608123975
+    },
+    "spread_bl": {
+      "n": 17927,
+      "0.05": 2.549100843711049,
+      "0.5": 4.104630010036057,
+      "0.95": 7.338525915840433
+    },
+    "centroid_speed_bl_s": {
+      "n": 17927,
+      "0.05": 0.2997159730213553,
+      "0.5": 1.5568509688727772,
+      "0.95": 3.549763341114075
+    },
+    "tracked_frames": 17999,
+    "circulation_valid_frames": 9856,
+    "circulation_eligible_frame_fraction": 0.5475859769987221,
+    "joint_valid_frames": 9725,
+    "joint_eligible_frame_fraction": 0.5403077948774931,
+    "circulation": {
+      "n": 9856,
+      "0.05": 0.027587586294822324,
+      "0.5": 0.2599046673749318,
+      "0.95": 0.6030124159465816
+    },
+    "circulation_median": 0.2599046673749318,
+    "signed_circulation": {
+      "n": 9856,
+      "0.05": -0.6017944276212117,
+      "0.5": -0.18469631135861508,
+      "0.95": 0.36064868497976643
+    },
+    "polarization": {
+      "n": 17837,
+      "0.05": 0.38237178992694526,
+      "0.5": 0.8658791399557992,
+      "0.95": 0.9814973768313777
+    },
+    "polarization_valid_frames": 17837,
+    "polarization_eligible_frame_fraction": 0.9909994999722207,
+    "polarization_when_circulation_eligible": {
+      "n": 9725,
+      "0.05": 0.47840324170635296,
+      "0.5": 0.8982256081679915,
+      "0.95": 0.9830005486418455
+    },
+    "polarization_when_circulation_ineligible_or_unknown": {
+      "n": 8112,
+      "0.05": 0.31337184715715416,
+      "0.5": 0.807394511045171,
+      "0.95": 0.9770260924838435
+    },
+    "eligible_fish_fraction": {
+      "n": 17927,
+      "0.05": 0.4666666666666667,
+      "0.5": 0.8,
+      "0.95": 0.9666666666666667
+    },
+    "iid_direction_reference": {
+      "n": 9856,
+      "0.05": 0.10476737551287066,
+      "0.5": 0.11064668061060753,
+      "0.95": 0.11516471649044516
+    },
+    "heading_selection_sensitivity": {
+      "raw_polarization": {
+        "n": 17999,
+        "0.05": 0.38266135818470387,
+        "0.5": 0.8649137711080097,
+        "0.95": 0.9814526007275299
+      },
+      "masked_polarization": {
+        "n": 17837,
+        "0.05": 0.38237178992694526,
+        "0.5": 0.8658791399557992,
+        "0.95": 0.9814973768313777
+      },
+      "raw_polarization_on_masked_frames": {
+        "n": 17837,
+        "0.05": 0.38237178992694526,
+        "0.5": 0.8658791399557992,
+        "0.95": 0.9814973768313777
+      },
+      "raw_polarization_on_excluded_frames": {
+        "n": 162,
+        "0.05": 0.3912472406949824,
+        "0.5": 0.7594492019486461,
+        "0.95": 0.9626178143043257
+      },
+      "raw_minus_masked_median": -0.0009653688477895273,
+      "polarization_valid_frames": 17837,
+      "polarization_eligible_frame_fraction": 0.9909994999722207,
+      "heading_jump_rows": 72,
+      "heading_jump_row_fraction": 0.00013334074115228624,
+      "heading_masked_rows": 432,
+      "heading_masked_row_fraction": 0.0008000444469137174,
+      "exclusion_reasons": {
+        "any_fish_heading_jump_support": 162,
+        "nonfinite_heading_input": 0,
+        "incomplete_fish_set": 0
+      },
+      "affected_fish_only": {
+        "minimum_heading_valid_fraction": 0.8,
+        "valid_fish_per_frame": {
+          "n": 17999,
+          "0.05": 30.0,
+          "0.5": 30.0,
+          "0.95": 30.0
+        },
+        "polarization": {
+          "n": 17987,
+          "0.05": 0.3827788780112202,
+          "0.5": 0.8655009223613312,
+          "0.95": 0.9814557597153796
+        },
+        "valid_frames": 17987,
+        "valid_frame_fraction": 0.9993332962942386,
+        "polarization_on_primary_valid_frames": {
+          "n": 17837,
+          "0.05": 0.38237178992694526,
+          "0.5": 0.8658791399557992,
+          "0.95": 0.9814973768313777
+        },
+        "primary_polarization_on_common_frames": {
+          "n": 17837,
+          "0.05": 0.38237178992694526,
+          "0.5": 0.8658791399557992,
+          "0.95": 0.9814973768313777
+        },
+        "common_frames": 17837,
+        "iid_reference": {
+          "n": 17987,
+          "0.05": 0.1618021593796416,
+          "0.5": 0.1618021593796416,
+          "0.95": 0.1618021593796416
+        }
+      },
+      "polarization_iid_reference": {
+        "n": 17837,
+        "0.05": 0.1618021593796416,
+        "0.5": 0.1618021593796416,
+        "0.95": 0.1618021593796416
+      },
+      "iid_reference_note": "sqrt(pi/(4*n)) approximates mean P for independent uniform headings. Illustrative only, not a calibrated null or subtraction/division correction; E[P squared]=1/n under that idealization.",
+      "interpretation": "Raw uses all finite recorded headings; primary excludes an entire frame when any fish is heading-masked. Affected-fish-only sensitivity requires >=80% valid headings. Differences in medians describe selection and changing fish composition, not a correction."
+    },
+    "definition": "First min(target, available) sorted observed frames; kinematics recomputed with the truncated endpoint, retaining original segment/gap boundaries.",
+    "nearest_neighbor_bl": {
+      "n": 539970,
+      "0.05": 0.3645179960762329,
+      "0.5": 1.0329568746955322,
+      "0.95": 2.316685740025413
+    }
+  },
+  "nonpositive_length_frame_exclusion_sensitivity": {
+    "excluded_frames": [
+      10791
+    ],
+    "excluded_frame_count": 1,
+    "source_frame_count": 24593,
+    "retained_frame_count": 24592,
+    "excluded_fish_observations": 30,
+    "reference_length_px": 38.690481371143946,
+    "speed_bl_s": {
+      "n": 735240,
+      "0.05": 0.1297735099785422,
+      "0.5": 1.3783381624238693,
+      "0.95": 4.361137637303847
+    },
+    "acceleration_bl_s2": {
+      "n": 735240,
+      "0.05": 0.3139269415034412,
+      "0.5": 2.0638743393916186,
+      "0.95": 8.89627781468494
+    },
+    "turn_rate_rad_s": {
+      "n": 734736,
+      "0.05": -2.078295048262487,
+      "0.5": -0.01688898972301005,
+      "0.95": 1.7281629759265003
+    },
+    "slip_rad": {
+      "n": 590706,
+      "0.05": -0.24122203317650595,
+      "0.5": 0.023433380987062526,
+      "0.95": 0.3449811698010663
+    },
+    "curvature_times_L": {
+      "n": 737760,
+      "0.05": -0.617427207261864,
+      "0.5": 0.06007659447912662,
+      "0.95": 0.7958108126979756
+    },
+    "spread_bl": {
+      "n": 24508,
+      "0.05": 2.30228311310018,
+      "0.5": 3.7064533178873647,
+      "0.95": 6.892865802443287
+    },
+    "centroid_speed_bl_s": {
+      "n": 24508,
+      "0.05": 0.16762479926952137,
+      "0.5": 1.228994652539497,
+      "0.95": 3.4782438912764686
+    },
+    "tracked_frames": 24592,
+    "circulation_valid_frames": 10841,
+    "circulation_eligible_frame_fraction": 0.440834417696812,
+    "joint_valid_frames": 10658,
+    "joint_eligible_frame_fraction": 0.4333929733246584,
+    "circulation": {
+      "n": 10841,
+      "0.05": 0.027727667476862037,
+      "0.5": 0.2678104614379456,
+      "0.95": 0.6007938488043424
+    },
+    "circulation_median": 0.2678104614379456,
+    "signed_circulation": {
+      "n": 10841,
+      "0.05": -0.5981219583019002,
+      "0.5": -0.18954568627453447,
+      "0.95": 0.3731219740139555
+    },
+    "polarization": {
+      "n": 24378,
+      "0.05": 0.2865177958943905,
+      "0.5": 0.8273557835016934,
+      "0.95": 0.9793340629942892
+    },
+    "polarization_valid_frames": 24378,
+    "polarization_eligible_frame_fraction": 0.9912979830839297,
+    "polarization_when_circulation_eligible": {
+      "n": 10658,
+      "0.05": 0.47836647695750895,
+      "0.5": 0.8960305745592507,
+      "0.95": 0.9828899215627811
+    },
+    "polarization_when_circulation_ineligible_or_unknown": {
+      "n": 13720,
+      "0.05": 0.18707862531305358,
+      "0.5": 0.7320441916372225,
+      "0.95": 0.9718144724357608
+    },
+    "eligible_fish_fraction": {
+      "n": 24508,
+      "0.05": 0.26666666666666666,
+      "0.5": 0.7666666666666667,
+      "0.95": 0.9666666666666667
+    },
+    "iid_direction_reference": {
+      "n": 10841,
+      "0.05": 0.10476737551287066,
+      "0.5": 0.11064668061060753,
+      "0.95": 0.11516471649044516
+    },
+    "heading_selection_sensitivity": {
+      "raw_polarization": {
+        "n": 24592,
+        "0.05": 0.2856100407162531,
+        "0.5": 0.8265329823290862,
+        "0.95": 0.9792196970752862
+      },
+      "masked_polarization": {
+        "n": 24378,
+        "0.05": 0.2865177958943905,
+        "0.5": 0.8273557835016934,
+        "0.95": 0.9793340629942892
+      },
+      "raw_polarization_on_masked_frames": {
+        "n": 24378,
+        "0.05": 0.2865177958943905,
+        "0.5": 0.8273557835016934,
+        "0.95": 0.9793340629942892
+      },
+      "raw_polarization_on_excluded_frames": {
+        "n": 214,
+        "0.05": 0.25947239885328416,
+        "0.5": 0.7414956173101486,
+        "0.95": 0.965514778880212
+      },
+      "raw_minus_masked_median": -0.0008228011726071349,
+      "polarization_valid_frames": 24378,
+      "polarization_eligible_frame_fraction": 0.9912979830839297,
+      "heading_jump_rows": 84,
+      "heading_jump_row_fraction": 0.00011385816525699414,
+      "heading_masked_rows": 504,
+      "heading_masked_row_fraction": 0.0006831489915419649,
+      "exclusion_reasons": {
+        "any_fish_heading_jump_support": 214,
+        "nonfinite_heading_input": 0,
+        "incomplete_fish_set": 0
+      },
+      "affected_fish_only": {
+        "minimum_heading_valid_fraction": 0.8,
+        "valid_fish_per_frame": {
+          "n": 24592,
+          "0.05": 30.0,
+          "0.5": 30.0,
+          "0.95": 30.0
+        },
+        "polarization": {
+          "n": 24580,
+          "0.05": 0.28661903727333216,
+          "0.5": 0.8271184452697615,
+          "0.95": 0.9792361017359256
+        },
+        "valid_frames": 24580,
+        "valid_frame_fraction": 0.9995120364346128,
+        "polarization_on_primary_valid_frames": {
+          "n": 24378,
+          "0.05": 0.2865177958943905,
+          "0.5": 0.8273557835016934,
+          "0.95": 0.9793340629942892
+        },
+        "primary_polarization_on_common_frames": {
+          "n": 24378,
+          "0.05": 0.2865177958943905,
+          "0.5": 0.8273557835016934,
+          "0.95": 0.9793340629942892
+        },
+        "common_frames": 24378,
+        "iid_reference": {
+          "n": 24580,
+          "0.05": 0.1618021593796416,
+          "0.5": 0.1618021593796416,
+          "0.95": 0.1618021593796416
+        }
+      },
+      "polarization_iid_reference": {
+        "n": 24378,
+        "0.05": 0.1618021593796416,
+        "0.5": 0.1618021593796416,
+        "0.95": 0.1618021593796416
+      },
+      "iid_reference_note": "sqrt(pi/(4*n)) approximates mean P for independent uniform headings. Illustrative only, not a calibrated null or subtraction/division correction; E[P squared]=1/n under that idealization.",
+      "interpretation": "Raw uses all finite recorded headings; primary excludes an entire frame when any fish is heading-masked. Affected-fish-only sensitivity requires >=80% valid headings. Differences in medians describe selection and changing fish composition, not a correction."
+    },
+    "circulation_valid_frame_fraction_of_source": 0.44081649249786525,
+    "polarization_valid_frame_fraction_of_source": 0.991257674948156,
+    "definition": "Remove the complete frame whenever any fish has nonpositive body length, then recompute kinematics so smoothing never bridges the resulting gap. This is a sensitivity, not a claim that all retained finite primary positions/headings are correct. Own-set coverage uses retained frames; source-frame coverage is also recorded.",
+    "common_frame_comparison": {
+      "polarization": {
+        "frames": 24378,
+        "primary": {
+          "n": 24378,
+          "0.05": 0.2865177958943905,
+          "0.5": 0.8273557835016934,
+          "0.95": 0.9793340629942892
+        },
+        "sensitivity": {
+          "n": 24378,
+          "0.05": 0.2865177958943905,
+          "0.5": 0.8273557835016934,
+          "0.95": 0.9793340629942892
+        }
+      },
+      "circulation": {
+        "frames": 10841,
+        "primary": {
+          "n": 10841,
+          "0.05": 0.027727667476862037,
+          "0.5": 0.2678104614379456,
+          "0.95": 0.6007938488043424
+        },
+        "sensitivity": {
+          "n": 10841,
+          "0.05": 0.027727667476862037,
+          "0.5": 0.2678104614379456,
+          "0.95": 0.6007938488043424
+        }
+      }
+    },
+    "nearest_neighbor_bl": {
+      "n": 737760,
+      "0.05": 0.3528653531172488,
+      "0.5": 0.9684055317387958,
+      "0.95": 2.1652521879943163
+    }
+  },
+  "heading_diagnostics": {
+    "low_speed_bl_s": 0.5,
+    "heading_events": [
+      {
+        "id": 0,
+        "segment": 2,
+        "prev_frame": 9604,
+        "frame": 9605,
+        "signed_wrapped_step": 2.6566519710603043
+      },
+      {
+        "id": 0,
+        "segment": 4,
+        "prev_frame": 17061,
+        "frame": 17062,
+        "signed_wrapped_step": 1.7065963493584828
+      },
+      {
+        "id": 3,
+        "segment": 3,
+        "prev_frame": 13380,
+        "frame": 13381,
+        "signed_wrapped_step": -2.027703112511803
+      },
+      {
+        "id": 3,
+        "segment": 4,
+        "prev_frame": 17058,
+        "frame": 17059,
+        "signed_wrapped_step": -2.4457604026974264
+      },
+      {
+        "id": 3,
+        "segment": 5,
+        "prev_frame": 21075,
+        "frame": 21076,
+        "signed_wrapped_step": 1.7536498805380436
+      },
+      {
+        "id": 4,
+        "segment": 4,
+        "prev_frame": 17060,
+        "frame": 17061,
+        "signed_wrapped_step": -2.0722312663649003
+      },
+      {
+        "id": 5,
+        "segment": 2,
+        "prev_frame": 7582,
+        "frame": 7583,
+        "signed_wrapped_step": 1.9525020286315993
+      },
+      {
+        "id": 5,
+        "segment": 2,
+        "prev_frame": 9640,
+        "frame": 9641,
+        "signed_wrapped_step": 2.5336998969024735
+      },
+      {
+        "id": 5,
+        "segment": 4,
+        "prev_frame": 17060,
+        "frame": 17061,
+        "signed_wrapped_step": 2.8838630677005836
+      },
+      {
+        "id": 5,
+        "segment": 5,
+        "prev_frame": 21056,
+        "frame": 21057,
+        "signed_wrapped_step": -1.6618785112678272
+      },
+      {
+        "id": 7,
+        "segment": 4,
+        "prev_frame": 17060,
+        "frame": 17061,
+        "signed_wrapped_step": 2.6604587507594992
+      },
+      {
+        "id": 8,
+        "segment": 0,
+        "prev_frame": 1424,
+        "frame": 1425,
+        "signed_wrapped_step": -1.7902495480445582
+      },
+      {
+        "id": 8,
+        "segment": 4,
+        "prev_frame": 17060,
+        "frame": 17061,
+        "signed_wrapped_step": 1.6603635992237935
+      },
+      {
+        "id": 8,
+        "segment": 5,
+        "prev_frame": 18976,
+        "frame": 18977,
+        "signed_wrapped_step": 1.7553840685737008
+      },
+      {
+        "id": 9,
+        "segment": 2,
+        "prev_frame": 7575,
+        "frame": 7576,
+        "signed_wrapped_step": -2.1066968391797465
+      },
+      {
+        "id": 9,
+        "segment": 3,
+        "prev_frame": 13346,
+        "frame": 13347,
+        "signed_wrapped_step": -1.736871583321159
+      },
+      {
+        "id": 9,
+        "segment": 3,
+        "prev_frame": 13383,
+        "frame": 13384,
+        "signed_wrapped_step": 1.9650690432233118
+      },
+      {
+        "id": 9,
+        "segment": 4,
+        "prev_frame": 17057,
+        "frame": 17058,
+        "signed_wrapped_step": 1.9271805129778485
+      },
+      {
+        "id": 9,
+        "segment": 5,
+        "prev_frame": 20449,
+        "frame": 20450,
+        "signed_wrapped_step": -1.6857872735557007
+      },
+      {
+        "id": 10,
+        "segment": 2,
+        "prev_frame": 9647,
+        "frame": 9648,
+        "signed_wrapped_step": 1.628420872918248
+      },
+      {
+        "id": 10,
+        "segment": 4,
+        "prev_frame": 17057,
+        "frame": 17058,
+        "signed_wrapped_step": -2.742933735803479
+      },
+      {
+        "id": 11,
+        "segment": 3,
+        "prev_frame": 13377,
+        "frame": 13378,
+        "signed_wrapped_step": -1.597394121738519
+      },
+      {
+        "id": 11,
+        "segment": 4,
+        "prev_frame": 17057,
+        "frame": 17058,
+        "signed_wrapped_step": 1.6441936526965089
+      },
+      {
+        "id": 14,
+        "segment": 4,
+        "prev_frame": 17060,
+        "frame": 17061,
+        "signed_wrapped_step": -1.830405286285454
+      },
+      {
+        "id": 14,
+        "segment": 5,
+        "prev_frame": 21052,
+        "frame": 21053,
+        "signed_wrapped_step": -2.015698989389839
+      },
+      {
+        "id": 15,
+        "segment": 2,
+        "prev_frame": 9636,
+        "frame": 9637,
+        "signed_wrapped_step": -2.1986027551292473
+      },
+      {
+        "id": 16,
+        "segment": 2,
+        "prev_frame": 7577,
+        "frame": 7578,
+        "signed_wrapped_step": 1.770884039304688
+      },
+      {
+        "id": 17,
+        "segment": 4,
+        "prev_frame": 17061,
+        "frame": 17062,
+        "signed_wrapped_step": 1.7386748410524557
+      },
+      {
+        "id": 18,
+        "segment": 2,
+        "prev_frame": 10037,
+        "frame": 10038,
+        "signed_wrapped_step": -1.7223399169253657
+      },
+      {
+        "id": 18,
+        "segment": 4,
+        "prev_frame": 17060,
+        "frame": 17061,
+        "signed_wrapped_step": -2.790180004213031
+      },
+      {
+        "id": 19,
+        "segment": 4,
+        "prev_frame": 17060,
+        "frame": 17061,
+        "signed_wrapped_step": 2.880146493521168
+      },
+      {
+        "id": 22,
+        "segment": 3,
+        "prev_frame": 13382,
+        "frame": 13383,
+        "signed_wrapped_step": -1.987052961673822
+      },
+      {
+        "id": 23,
+        "segment": 2,
+        "prev_frame": 7569,
+        "frame": 7570,
+        "signed_wrapped_step": -1.910208088156514
+      },
+      {
+        "id": 23,
+        "segment": 2,
+        "prev_frame": 9632,
+        "frame": 9633,
+        "signed_wrapped_step": -1.596850002198496
+      },
+      {
+        "id": 23,
+        "segment": 4,
+        "prev_frame": 17057,
+        "frame": 17058,
+        "signed_wrapped_step": -2.4228316443606133
+      },
+      {
+        "id": 24,
+        "segment": 1,
+        "prev_frame": 6818,
+        "frame": 6819,
+        "signed_wrapped_step": -1.75096064602797
+      },
+      {
+        "id": 24,
+        "segment": 4,
+        "prev_frame": 17065,
+        "frame": 17066,
+        "signed_wrapped_step": 1.7193890288335067
+      },
+      {
+        "id": 24,
+        "segment": 5,
+        "prev_frame": 21054,
+        "frame": 21055,
+        "signed_wrapped_step": -2.6615878569378317
+      },
+      {
+        "id": 26,
+        "segment": 1,
+        "prev_frame": 3983,
+        "frame": 3984,
+        "signed_wrapped_step": -1.604800493197713
+      },
+      {
+        "id": 26,
+        "segment": 3,
+        "prev_frame": 13379,
+        "frame": 13380,
+        "signed_wrapped_step": 1.7451854001028897
+      },
+      {
+        "id": 28,
+        "segment": 3,
+        "prev_frame": 13377,
+        "frame": 13378,
+        "signed_wrapped_step": -1.625255015562303
+      },
+      {
+        "id": 28,
+        "segment": 4,
+        "prev_frame": 17058,
+        "frame": 17059,
+        "signed_wrapped_step": -2.994529704037154
+      }
+    ],
+    "speed_eligible_rows_before_heading_mask": 591211,
+    "reverse_motion_rows": 781,
+    "reverse_motion_fraction": 0.001321017369433248,
+    "reverse_motion_rows_outside_jump_mask": 771,
+    "longest_reverse_runs_per_fish": [
+      {
+        "id": 0,
+        "start": 18726,
+        "end": 18732,
+        "segment": 5,
+        "n": 7
+      },
+      {
+        "id": 1,
+        "start": 21074,
+        "end": 21089,
+        "segment": 5,
+        "n": 16
+      },
+      {
+        "id": 2,
+        "start": 21291,
+        "end": 21294,
+        "segment": 5,
+        "n": 4
+      },
+      {
+        "id": 3,
+        "start": 5345,
+        "end": 5355,
+        "segment": 1,
+        "n": 11
+      },
+      {
+        "id": 4,
+        "start": 11642,
+        "end": 11645,
+        "segment": 3,
+        "n": 4
+      },
+      {
+        "id": 5,
+        "start": 22728,
+        "end": 22733,
+        "segment": 6,
+        "n": 6
+      },
+      {
+        "id": 6,
+        "start": 14403,
+        "end": 14410,
+        "segment": 4,
+        "n": 8
+      },
+      {
+        "id": 7,
+        "start": 19847,
+        "end": 19852,
+        "segment": 5,
+        "n": 6
+      },
+      {
+        "id": 8,
+        "start": 4631,
+        "end": 4634,
+        "segment": 1,
+        "n": 4
+      },
+      {
+        "id": 9,
+        "start": 3511,
+        "end": 3515,
+        "segment": 0,
+        "n": 5
+      },
+      {
+        "id": 10,
+        "start": 7823,
+        "end": 7825,
+        "segment": 2,
+        "n": 3
+      },
+      {
+        "id": 11,
+        "start": 6805,
+        "end": 6808,
+        "segment": 1,
+        "n": 4
+      },
+      {
+        "id": 12,
+        "start": 7424,
+        "end": 7428,
+        "segment": 2,
+        "n": 5
+      },
+      {
+        "id": 13,
+        "start": 23366,
+        "end": 23370,
+        "segment": 6,
+        "n": 5
+      },
+      {
+        "id": 14,
+        "start": 7584,
+        "end": 7585,
+        "segment": 2,
+        "n": 2
+      },
+      {
+        "id": 15,
+        "start": 4665,
+        "end": 4669,
+        "segment": 1,
+        "n": 5
+      },
+      {
+        "id": 16,
+        "start": 13155,
+        "end": 13169,
+        "segment": 3,
+        "n": 15
+      },
+      {
+        "id": 17,
+        "start": 21439,
+        "end": 21444,
+        "segment": 5,
+        "n": 6
+      },
+      {
+        "id": 18,
+        "start": 23074,
+        "end": 23078,
+        "segment": 6,
+        "n": 5
+      },
+      {
+        "id": 19,
+        "start": 21439,
+        "end": 21441,
+        "segment": 5,
+        "n": 3
+      },
+      {
+        "id": 20,
+        "start": 12283,
+        "end": 12287,
+        "segment": 3,
+        "n": 5
+      },
+      {
+        "id": 21,
+        "start": 20274,
+        "end": 20280,
+        "segment": 5,
+        "n": 7
+      },
+      {
+        "id": 22,
+        "start": 19915,
+        "end": 19923,
+        "segment": 5,
+        "n": 9
+      },
+      {
+        "id": 23,
+        "start": 21142,
+        "end": 21149,
+        "segment": 5,
+        "n": 8
+      },
+      {
+        "id": 24,
+        "start": 8612,
+        "end": 8636,
+        "segment": 2,
+        "n": 25
+      },
+      {
+        "id": 25,
+        "start": 345,
+        "end": 352,
+        "segment": 0,
+        "n": 8
+      },
+      {
+        "id": 26,
+        "start": 1817,
+        "end": 1818,
+        "segment": 0,
+        "n": 2
+      },
+      {
+        "id": 27,
+        "start": 8559,
+        "end": 8561,
+        "segment": 2,
+        "n": 3
+      },
+      {
+        "id": 28,
+        "start": 8638,
+        "end": 8642,
+        "segment": 2,
+        "n": 5
+      },
+      {
+        "id": 29,
+        "start": 5329,
+        "end": 5330,
+        "segment": 1,
+        "n": 2
+      }
+    ],
+    "interpretation": "Flags reverse travel relative to tracked heading, not proven head-tail flips. Sustained intervals are not automatically excluded without video validation.",
+    "mask_policy": "Finite speed >= threshold; heading_valid is not used in the primary denominator or runs."
+  },
+  "heading_selection_sensitivity": {
+    "raw_polarization": {
+      "n": 24593,
+      "0.05": 0.28561609719974984,
+      "0.5": 0.8265302854387909,
+      "0.95": 0.9792182158477316
+    },
+    "masked_polarization": {
+      "n": 24379,
+      "0.05": 0.2865202883660525,
+      "0.5": 0.8273422479928021,
+      "0.95": 0.9793338893573186
+    },
+    "raw_polarization_on_masked_frames": {
+      "n": 24379,
+      "0.05": 0.2865202883660525,
+      "0.5": 0.827342247992802,
+      "0.95": 0.9793338893573186
+    },
+    "raw_polarization_on_excluded_frames": {
+      "n": 214,
+      "0.05": 0.25947239885328416,
+      "0.5": 0.7414956173101486,
+      "0.95": 0.965514778880212
+    },
+    "raw_minus_masked_median": -0.0008119625540111697,
+    "polarization_valid_frames": 24379,
+    "polarization_eligible_frame_fraction": 0.9912983369251414,
+    "heading_jump_rows": 84,
+    "heading_jump_row_fraction": 0.00011385353555889887,
+    "heading_masked_rows": 504,
+    "heading_masked_row_fraction": 0.0006831212133533933,
+    "exclusion_reasons": {
+      "any_fish_heading_jump_support": 214,
+      "nonfinite_heading_input": 0,
+      "incomplete_fish_set": 0
+    },
+    "affected_fish_only": {
+      "minimum_heading_valid_fraction": 0.8,
+      "valid_fish_per_frame": {
+        "n": 24593,
+        "0.05": 30.0,
+        "0.5": 30.0,
+        "0.95": 30.0
+      },
+      "polarization": {
+        "n": 24581,
+        "0.05": 0.28662397221880354,
+        "0.5": 0.8271120185598466,
+        "0.95": 0.9792359905783871
+      },
+      "valid_frames": 24581,
+      "valid_frame_fraction": 0.9995120562761761,
+      "polarization_on_primary_valid_frames": {
+        "n": 24379,
+        "0.05": 0.2865202883660525,
+        "0.5": 0.8273422479928019,
+        "0.95": 0.9793338893573187
+      },
+      "primary_polarization_on_common_frames": {
+        "n": 24379,
+        "0.05": 0.2865202883660525,
+        "0.5": 0.8273422479928021,
+        "0.95": 0.9793338893573186
+      },
+      "common_frames": 24379,
+      "iid_reference": {
+        "n": 24581,
+        "0.05": 0.1618021593796416,
+        "0.5": 0.1618021593796416,
+        "0.95": 0.1618021593796416
+      }
+    },
+    "polarization_iid_reference": {
+      "n": 24379,
+      "0.05": 0.1618021593796416,
+      "0.5": 0.1618021593796416,
+      "0.95": 0.1618021593796416
+    },
+    "iid_reference_note": "sqrt(pi/(4*n)) approximates mean P for independent uniform headings. Illustrative only, not a calibrated null or subtraction/division correction; E[P squared]=1/n under that idealization.",
+    "interpretation": "Raw uses all finite recorded headings; primary excludes an entire frame when any fish is heading-masked. Affected-fish-only sensitivity requires >=80% valid headings. Differences in medians describe selection and changing fish composition, not a correction."
+  },
+  "polarization_eligible_frame_fraction": 0.9912983369251414,
+  "heading_axis_disagreement_abs_rad": {
+    "n": 737788,
+    "0.05": 0.003732722118560194,
+    "0.5": 0.03818801077446965,
+    "0.95": 0.2055535685106976
+  },
+  "kinematics_eligible_fraction": 0.9965843939332331,
+  "circulation_eligible_frame_fraction": 0.44081649249786525,
+  "joint_eligible_frame_fraction": 0.4333753507095515,
+  "histograms": {
+    "speed": {
+      "finite_n": 735270,
+      "counted_n": 735052,
+      "underflow": 0,
+      "overflow": 218,
+      "range": [
+        0.0,
+        12.0
+      ],
+      "bins": 120
+    },
+    "turn": {
+      "finite_n": 734766,
+      "counted_n": 734750,
+      "underflow": 5,
+      "overflow": 11,
+      "range": [
+        -20.0,
+        20.0
+      ],
+      "bins": 160
+    },
+    "curvature": {
+      "finite_n": 737788,
+      "counted_n": 737787,
+      "underflow": 1,
+      "overflow": 0,
+      "range": [
+        -5.0,
+        5.0
+      ],
+      "bins": 160
+    },
+    "nearest": {
+      "finite_n": 737790,
+      "counted_n": 737790,
+      "underflow": 0,
+      "overflow": 0,
+      "range": [
+        0.0,
+        20.0
+      ],
+      "bins": 160
+    },
+    "polarization": {
+      "finite_n": 24379,
+      "counted_n": 24379,
+      "underflow": 0,
+      "overflow": 0,
+      "range": [
+        0.0,
+        1.0
+      ],
+      "bins": 50
+    },
+    "circulation": {
+      "finite_n": 10841,
+      "counted_n": 10841,
+      "underflow": 0,
+      "overflow": 0,
+      "range": [
+        0.0,
+        1.0
+      ],
+      "bins": 50
+    }
+  },
+  "spatial_map": {
+    "focal_count": 737790,
+    "shown_pair_fraction": 0.9453142680072967,
+    "extent_bl": 10,
+    "bins": 40,
+    "normalization": "Counts divided by all focal observations and bin area; visible map need not integrate to one."
+  },
+  "finite_N_note": "Normalized circulation uses a finite number of dependent centroid-relative vectors; iid_direction_reference is illustrative, not a calibrated null or cross-N bias correction.",
+  "time_base_note": "Track timestamps are used as provided; no independent camera-clock calibration performed in this comparison.",
+  "signed_circulation_note": "Image-coordinate sign; do not compare chirality across cameras without verifying image orientation.",
+  "video_status": "No new video overlays in this comparison; original 0066 pilot retains its three inspected examples.",
+  "network": {
+    "network_rows": 10901974,
+    "fish": 30,
+    "tracked_frame_count": 24593,
+    "covered_frame_count": 24593,
+    "network_uncovered_frames": [],
+    "observer_frame_count": 737790,
+    "visible_degree_mean": 14.776527196085606,
+    "visible_fraction_mean": 0.5095354205546762,
+    "reciprocal_edge_fraction": 0.7617855261808549,
+    "degree_histogram": {
+      "degree": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "count": [
+        0,
+        1271,
+        1468,
+        2590,
+        4255,
+        6988,
+        10099,
+        15493,
+        21744,
+        28808,
+        37109,
+        44783,
+        51871,
+        57767,
+        61668,
+        62905,
+        60850,
+        57799,
+        52249,
+        44920,
+        36601,
+        27953,
+        20359,
+        13566,
+        7837,
+        4209,
+        1829,
+        634,
+        149,
+        16
+      ]
+    },
+    "angular_size_histogram": {
+      "edges_deg": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0,
+        18.0,
+        20.0,
+        22.0,
+        24.0,
+        26.0,
+        28.0,
+        30.0,
+        32.0,
+        34.0,
+        36.0,
+        38.0,
+        40.0,
+        42.0,
+        44.0,
+        46.0,
+        48.0,
+        50.0,
+        52.0,
+        54.0,
+        56.0,
+        58.0,
+        60.0,
+        62.0,
+        64.0,
+        66.0,
+        68.0,
+        70.0,
+        72.0,
+        74.0,
+        76.0,
+        78.0,
+        80.0,
+        82.0,
+        84.0,
+        86.0,
+        88.0,
+        90.0,
+        92.0,
+        94.0,
+        96.0,
+        98.0,
+        100.0,
+        102.0,
+        104.0,
+        106.0,
+        108.0,
+        110.0,
+        112.0,
+        114.0,
+        116.0,
+        118.0,
+        120.0,
+        122.0,
+        124.0,
+        126.0,
+        128.0,
+        130.0,
+        132.0,
+        134.0,
+        136.0,
+        138.0,
+        140.0,
+        142.0,
+        144.0,
+        146.0,
+        148.0,
+        150.0,
+        152.0,
+        154.0,
+        156.0,
+        158.0,
+        160.0,
+        162.0,
+        164.0,
+        166.0,
+        168.0,
+        170.0,
+        172.0,
+        174.0,
+        176.0,
+        178.0,
+        180.0,
+        182.0,
+        184.0,
+        186.0,
+        188.0,
+        190.0,
+        192.0,
+        194.0,
+        196.0,
+        198.0,
+        200.0,
+        202.0,
+        204.0,
+        206.0,
+        208.0,
+        210.0,
+        212.0,
+        214.0,
+        216.0,
+        218.0,
+        220.0,
+        222.0,
+        224.0,
+        226.0,
+        228.0,
+        230.0,
+        232.0,
+        234.0,
+        236.0,
+        238.0,
+        240.0,
+        242.0,
+        244.0,
+        246.0,
+        248.0,
+        250.0,
+        252.0,
+        254.0,
+        256.0,
+        258.0,
+        260.0,
+        262.0,
+        264.0,
+        266.0,
+        268.0,
+        270.0,
+        272.0,
+        274.0,
+        276.0,
+        278.0,
+        280.0,
+        282.0,
+        284.0,
+        286.0,
+        288.0,
+        290.0,
+        292.0,
+        294.0,
+        296.0,
+        298.0,
+        300.0,
+        302.0,
+        304.0,
+        306.0,
+        308.0,
+        310.0,
+        312.0,
+        314.0,
+        316.0,
+        318.0,
+        320.0,
+        322.0,
+        324.0,
+        326.0,
+        328.0,
+        330.0,
+        332.0,
+        334.0,
+        336.0,
+        338.0,
+        340.0,
+        342.0,
+        344.0,
+        346.0,
+        348.0,
+        350.0,
+        352.0,
+        354.0,
+        356.0,
+        358.0,
+        360.0,
+        362.0,
+        364.0,
+        366.0,
+        368.0,
+        370.0,
+        372.0,
+        374.0,
+        376.0,
+        378.0,
+        380.0,
+        382.0,
+        384.0,
+        386.0,
+        388.0,
+        390.0,
+        392.0,
+        394.0,
+        396.0,
+        398.0,
+        400.0,
+        402.0,
+        404.0,
+        406.0,
+        408.0,
+        410.0,
+        412.0,
+        414.0,
+        416.0,
+        418.0,
+        420.0,
+        422.0,
+        424.0,
+        426.0,
+        428.0,
+        430.0,
+        432.0,
+        434.0,
+        436.0,
+        438.0,
+        440.0,
+        442.0,
+        444.0,
+        446.0,
+        448.0,
+        450.0,
+        452.0,
+        454.0,
+        456.0,
+        458.0,
+        460.0,
+        462.0,
+        464.0,
+        466.0,
+        468.0,
+        470.0,
+        472.0,
+        474.0,
+        476.0,
+        478.0,
+        480.0,
+        482.0,
+        484.0,
+        486.0,
+        488.0,
+        490.0,
+        492.0,
+        494.0,
+        496.0,
+        498.0,
+        500.0,
+        502.0,
+        504.0,
+        506.0,
+        508.0,
+        510.0,
+        512.0,
+        514.0,
+        516.0,
+        518.0,
+        520.0,
+        522.0,
+        524.0,
+        526.0,
+        528.0,
+        530.0,
+        532.0,
+        534.0,
+        536.0,
+        538.0,
+        540.0,
+        542.0,
+        544.0,
+        546.0,
+        548.0,
+        550.0,
+        552.0,
+        554.0,
+        556.0,
+        558.0,
+        560.0,
+        562.0,
+        564.0,
+        566.0,
+        568.0,
+        570.0,
+        572.0,
+        574.0,
+        576.0,
+        578.0,
+        580.0,
+        582.0,
+        584.0,
+        586.0,
+        588.0,
+        590.0,
+        592.0,
+        594.0,
+        596.0,
+        598.0,
+        600.0,
+        602.0,
+        604.0,
+        606.0,
+        608.0,
+        610.0,
+        612.0,
+        614.0,
+        616.0,
+        618.0,
+        620.0,
+        622.0,
+        624.0,
+        626.0,
+        628.0,
+        630.0,
+        632.0,
+        634.0,
+        636.0,
+        638.0,
+        640.0,
+        642.0,
+        644.0,
+        646.0,
+        648.0,
+        650.0,
+        652.0,
+        654.0,
+        656.0,
+        658.0,
+        660.0,
+        662.0,
+        664.0,
+        666.0,
+        668.0,
+        670.0,
+        672.0,
+        674.0,
+        676.0,
+        678.0,
+        680.0,
+        682.0,
+        684.0,
+        686.0,
+        688.0,
+        690.0,
+        692.0,
+        694.0,
+        696.0,
+        698.0,
+        700.0,
+        702.0,
+        704.0,
+        706.0,
+        708.0,
+        710.0,
+        712.0,
+        714.0,
+        716.0,
+        718.0,
+        720.0
+      ],
+      "count": [
+        2097556,
+        2022713,
+        1205378,
+        1047260,
+        664143,
+        614606,
+        403156,
+        394169,
+        270394,
+        272048,
+        227757,
+        162593,
+        175851,
+        119793,
+        125880,
+        92504,
+        98310,
+        71884,
+        77106,
+        68545,
+        51115,
+        55021,
+        42195,
+        45234,
+        34478,
+        37322,
+        28140,
+        31147,
+        28903,
+        22270,
+        24057,
+        18361,
+        19937,
+        15387,
+        16987,
+        13366,
+        15000,
+        13181,
+        10158,
+        11115,
+        8635,
+        9703,
+        7667,
+        8653,
+        6437,
+        7274,
+        6674,
+        5275,
+        5720,
+        4452,
+        4890,
+        3872,
+        4442,
+        3483,
+        3768,
+        3593,
+        2748,
+        3067,
+        2543,
+        2826,
+        2353,
+        2606,
+        2162,
+        2390,
+        2359,
+        1797,
+        2117,
+        1718,
+        2021,
+        1577,
+        1818,
+        1401,
+        1682,
+        1545,
+        1207,
+        1454,
+        1135,
+        1304,
+        968,
+        1090,
+        868,
+        981,
+        846,
+        580,
+        513,
+        372,
+        349,
+        192,
+        170,
+        87,
+        7657,
+        221,
+        178,
+        207,
+        191,
+        181,
+        121,
+        148,
+        139,
+        162,
+        154,
+        116,
+        134,
+        96,
+        102,
+        97,
+        81,
+        66,
+        95,
+        102,
+        64,
+        56,
+        55,
+        69,
+        50,
+        58,
+        47,
+        50,
+        50,
+        38,
+        43,
+        27,
+        24,
+        28,
+        20,
+        12,
+        16,
+        3,
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        4,
+        1,
+        7,
+        9,
+        572,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "underflow": 0,
+      "overflow": 0
+    },
+    "angular_size_range_deg": [
+      0.36,
+      335.16
+    ],
+    "distance_range_px": [
+      0.15168871056438993,
+      1514.4168125200888
+    ],
+    "ray_count_range": [
+      1,
+      931
+    ],
+    "matched_duration": {
+      "target_frame_count": 17999,
+      "selection": "First min(17999, tracked_frame_count) sorted observed track frames",
+      "tracked_frame_count": 17999,
+      "frame_start": 1,
+      "frame_end": 18004,
+      "covered_frame_count": 17999,
+      "coverage_fraction": 1.0,
+      "network_uncovered_frames": [],
+      "observer_frame_count": 539970,
+      "network_rows": 8298154,
+      "visible_degree_mean": 15.367805618830676,
+      "visible_fraction_mean": 0.5299243316838164,
+      "reciprocal_edge_fraction": 0.7643822951466073
+    },
+    "nonpositive_length_frame_exclusion_sensitivity": {
+      "frame_ids_provided": true,
+      "selection": "Exclude whole caller-supplied frames with any nonpositive body length; retain all frames in primary metrics and raw-row QC",
+      "excluded_tracked_frames": [
+        10791
+      ],
+      "excluded_tracked_frame_count": 1,
+      "excluded_covered_frames": [
+        10791
+      ],
+      "excluded_covered_frame_count": 1,
+      "excluded_network_rows": 320,
+      "tracked_frame_count": 24592,
+      "covered_frame_count": 24592,
+      "coverage_fraction": 1.0,
+      "network_uncovered_frames": [],
+      "observer_frame_count": 737760,
+      "network_rows": 10901654,
+      "visible_degree_mean": 14.776694317935371,
+      "visible_fraction_mean": 0.5095411833770818,
+      "reciprocal_edge_fraction": 0.761786789417459,
+      "degree_histogram": {
+        "degree": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "count": [
+          0,
+          1271,
+          1468,
+          2590,
+          4255,
+          6988,
+          10097,
+          15490,
+          21740,
+          28804,
+          37107,
+          44780,
+          51871,
+          57758,
+          61668,
+          62904,
+          60849,
+          57799,
+          52248,
+          44920,
+          36601,
+          27953,
+          20359,
+          13566,
+          7837,
+          4209,
+          1829,
+          634,
+          149,
+          16
+        ]
+      }
+    },
+    "quality": {
+      "passed": [
+        "required columns and finite values",
+        "integer keys and ray counts",
+        "complete track fish set",
+        "edge endpoints",
+        "no self edges",
+        "unique edges within/across batches",
+        "positive rays",
+        "angular-size relation",
+        "center distance relation",
+        "stream and packed adjacency row counts"
+      ],
+      "max_network_distance_error_px": 2.2737367544323206e-13,
+      "distance_tolerance_px": 0.0001,
+      "max_angular_relation_error_deg": 5.684341886080802e-14,
+      "angular_tolerance_deg": 1e-09,
+      "required_null_cells": 0,
+      "coverage_policy": "Whole missing frames are unknown; exclude them from denominators. Include zero-degree fish in covered frames."
+    },
+    "source_schema": {
+      "frame": "int64",
+      "id1": "int64",
+      "id2": "int64",
+      "perspective": "int64",
+      "angular_size_deg": "double",
+      "n_rays": "int64",
+      "distance": "double",
+      "group": "large_string",
+      "sequence": "large_string"
+    },
+    "processing": {
+      "batch_size": 131072,
+      "batches": 84,
+      "packed_adjacency_bytes": 2779009,
+      "frame_decode_chunk": 128,
+      "row_order_assumption": "none"
+    }
+  }
+}

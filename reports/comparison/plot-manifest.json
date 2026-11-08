@@ -1,0 +1,42 @@
+{
+  "trials": [
+    "10-fish__0066",
+    "10-fish__0105",
+    "10-fish__0126",
+    "30-fish__0084",
+    "30-fish__0115",
+    "30-fish__0120",
+    "70-fish__0103",
+    "70-fish__0107",
+    "70-fish__0124",
+    "150-fish__150-fish"
+  ],
+  "missing_trials": [],
+  "complete": true,
+  "input_sha256": {
+    "trials/10-fish__0066/summary.json": "cc55b8166b7a8bec9ccbe952c3654f8fa72621c07ab12829e5f595eb54821a0a",
+    "trials/10-fish__0066/collective.csv": "d3dd4e3a282ff51067407ef85fa9251b3b01340ab39280a5b63356abbf72bea2",
+    "trials/10-fish__0105/summary.json": "5fd0b64bc390a26051de804e8c81b7e3590dc6c8251626e4ac9352eb9bf3bb4b",
+    "trials/10-fish__0105/collective.csv": "2949e378c0a84cd7365d521a8e303f6f479858e06b90c16b2c2f8cbc8ec0bbdf",
+    "trials/10-fish__0126/summary.json": "cfc3b89de329d0502e5746e7dc522cb685c27c2baeb9040e14e076967c480b17",
+    "trials/10-fish__0126/collective.csv": "ab9a1f6dd723e21d21cfb967780cb2d0ed9af710dc14f2f71fd2bbf602c73240",
+    "trials/30-fish__0084/summary.json": "833cf957a4d995560aa7b0901c10c0ab082772a2a90725ced1e10c521bb992d4",
+    "trials/30-fish__0084/collective.csv": "fe0a9ea22d6c1541762e177fe8554eeebad6791b55ed93bbe4fcadffbdd63b2d",
+    "trials/30-fish__0115/summary.json": "895845db7d4406ee602cf29a5f60a2e5e48977e2c982cd2f4d854071192f8061",
+    "trials/30-fish__0115/collective.csv": "4cd7ddd5ab47891583ecc43375c8870d28f53def8ab646318b7613b8bffe1e95",
+    "trials/30-fish__0120/summary.json": "4aa4997bc9aa97cd7621d8e6c08b79774406a149ecd58969bb168076f04026f5",
+    "trials/30-fish__0120/collective.csv": "0fe3b1d9d2507360dbb8b85af593df39abf122c473289b2429029b2f11038fa2",
+    "trials/70-fish__0103/summary.json": "3a9fa9b5d824d7094179b93281a029db183189eb1b407e693670560480377f95",
+    "trials/70-fish__0103/collective.csv": "95cb29fc485917d994cb1b064c34a3ee8634d66a8c3c844874de610eca7fad1b",
+    "trials/70-fish__0107/summary.json": "7df6d26f4f2360fe875676f83f2eb7a2b3f11859c78eb01ff2695f93a461a8b9",
+    "trials/70-fish__0107/collective.csv": "ebb79190274a8ed44db58a176da5000e85a5f058b6acc4494d0404541d0a7dc0",
+    "trials/70-fish__0124/summary.json": "7cc1a242dc0753b80ab331a8e2ce35fa26e812b00d58b5a323803fad66088a47",
+    "trials/70-fish__0124/collective.csv": "6ec44b1b4a5cadd86bfdb4fb9e5ff82ee0d0840a39e4aae0c555d5e0bd862e44",
+    "trials/150-fish__150-fish/summary.json": "a53c72fa340a09c713a44c141a3c2107d968a322a6d1f7c9fcbe42105c046d13",
+    "trials/150-fish__150-fish/collective.csv": "95090f1afc8fea83a796b95cb72598ab87a705764807ef8f4bb9187a465c8a77"
+  },
+  "script_sha256": "a3aefdb80c4e1d6649300cf63239fdaaf87a532fe98d7904c434a01fd221fb1b",
+  "interval_definition": "Within-trial 5th\u201395th percentiles; not confidence intervals.",
+  "weighting": "Each trial plotted separately; no pooling across trials.",
+  "timeline": "Every group frame; breaks at metric NaNs, segment boundaries and frame gaps."
+}

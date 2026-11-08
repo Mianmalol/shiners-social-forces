@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "shiners-social-forces"
+version = "0.1.0"
+description = "Reproducible descriptive atlas of tracked golden shiners"
+requires-python = ">=3.11,<3.14"
+dependencies = ["numpy>=2,<3", "pandas>=2.2,<4", "pyarrow>=18", "scipy>=1.14", "matplotlib>=3.9", "av>=14"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[project.scripts]
+shiners-pilot = "shiners.pilot:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/shiners"]

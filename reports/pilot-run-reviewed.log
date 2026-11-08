@@ -1,0 +1,382 @@
+{
+  "scope": "10-fish/0066 pilot only; no interaction/causal model fitted",
+  "length_scale_px": 38.987234372733916,
+  "quality": {
+    "track_rows": 245780,
+    "network_rows": 1662869,
+    "fish": 10,
+    "frames": 24578,
+    "frame_range": [
+      1,
+      24584
+    ],
+    "segments": [
+      {
+        "segment": 0,
+        "min": 1,
+        "max": 3596,
+        "nunique": 3596
+      },
+      {
+        "segment": 1,
+        "min": 3598,
+        "max": 7192,
+        "nunique": 3595
+      },
+      {
+        "segment": 2,
+        "min": 7194,
+        "max": 10789,
+        "nunique": 3596
+      },
+      {
+        "segment": 3,
+        "min": 10791,
+        "max": 14385,
+        "nunique": 3595
+      },
+      {
+        "segment": 4,
+        "min": 14387,
+        "max": 17981,
+        "nunique": 3595
+      },
+      {
+        "segment": 5,
+        "min": 17983,
+        "max": 21578,
+        "nunique": 3596
+      },
+      {
+        "segment": 6,
+        "min": 21580,
+        "max": 24584,
+        "nunique": 3005
+      }
+    ],
+    "missing_frames_inside_range": 6,
+    "network_uncovered_frames": [],
+    "network_coverage_policy": "Whole missing frames unknown; zero-degree fish included in covered frames.",
+    "max_network_distance_error_px": 1.1368683772161603e-13,
+    "distance_tolerance_px": 0.0001,
+    "distance_source_dtypes": {
+      "X": "float64",
+      "Y": "float64",
+      "distance": "float64"
+    },
+    "null_cells_tracks": 0,
+    "null_cells_network": 0,
+    "passed": [
+      "required schema/finite values",
+      "unique keys",
+      "complete fish set",
+      "consistent frame times/segments",
+      "monotone times/segments",
+      "edge endpoints",
+      "no self edges",
+      "positive lengths/rays",
+      "angular-size relation",
+      "network center distances"
+    ]
+  },
+  "speed_bl_s": {
+    "n": 244940,
+    "0.05": 0.35517063447918584,
+    "0.5": 1.452570571661768,
+    "0.95": 3.531389184529936
+  },
+  "acceleration_bl_s2": {
+    "n": 244940,
+    "0.05": 0.4010828305948965,
+    "0.5": 1.9931171684987925,
+    "0.95": 8.522360568604231
+  },
+  "turn_rate_rad_s": {
+    "n": 244916,
+    "0.05": -1.9263730601591984,
+    "0.5": -0.014467284127839476,
+    "0.95": 2.1064582446641973
+  },
+  "slip_rad": {
+    "n": 222157,
+    "0.05": -0.27259925822232517,
+    "0.5": 0.0064189150642390835,
+    "0.95": 0.2708929088484868
+  },
+  "curvature_times_L": {
+    "n": 245780,
+    "0.05": -0.6359656794039505,
+    "0.5": 0.015397733635581732,
+    "0.95": 0.6943039336241841
+  },
+  "polarization": {
+    "n": 24554,
+    "0.05": 0.32121417804141417,
+    "0.5": 0.893984429425299,
+    "0.95": 0.9874366807243445
+  },
+  "circulation": {
+    "n": 11458,
+    "0.05": 0.03193876404755158,
+    "0.5": 0.38308575751335017,
+    "0.95": 0.8818685998986863
+  },
+  "signed_circulation": {
+    "n": 11458,
+    "0.05": -0.8788343943580603,
+    "0.5": -0.011441944123443612,
+    "0.95": 0.6521507128127301
+  },
+  "spread_bl": {
+    "n": 24494,
+    "0.05": 1.9808897966395105,
+    "0.5": 2.8439756446631392,
+    "0.95": 4.187717892803292
+  },
+  "nearest_neighbor_bl": {
+    "n": 245780,
+    "0.05": 0.5252488554191107,
+    "0.5": 1.3091461439206498,
+    "0.95": 3.5306257297614665
+  },
+  "visible_degree": {
+    "n": 245780,
+    "0.05": 4.0,
+    "0.5": 7.0,
+    "0.95": 9.0
+  },
+  "visible_degree_mean": 6.76568069004801,
+  "reciprocal_edge_fraction": 0.8507874041791627,
+  "eligibility": {
+    "kinematics_fraction": 0.9965823093823745,
+    "slip_fraction": 0.9038855887378957,
+    "circulation_frame_fraction": 0.46618927496134754,
+    "curvature_fraction": 1.0,
+    "spatial_displayed_pair_fraction": 0.9861362013001691
+  },
+  "noise_diagnostic": {
+    "position_residual_sd_px": [
+      0.279717290415611,
+      0.3043824785282914
+    ],
+    "velocity_component_sd_bl_s": [
+      0.05283578332409872,
+      0.05749478932559896
+    ],
+    "acceleration_component_sd_bl_s2": [
+      0.4400040980930568,
+      0.4788032149931604
+    ],
+    "limitation": "Illustrative white-noise propagation only; SG residuals include real movement and are correlated. Not calibrated uncertainty."
+  },
+  "heading_diagnostics": {
+    "low_speed_bl_s": 0.5,
+    "heading_events": [
+      {
+        "id": 1,
+        "segment": 5,
+        "prev_frame": 20278,
+        "frame": 20279,
+        "signed_wrapped_step": 1.8920292322139964
+      },
+      {
+        "id": 2,
+        "segment": 5,
+        "prev_frame": 18173,
+        "frame": 18174,
+        "signed_wrapped_step": 1.7104327054872321
+      }
+    ],
+    "speed_eligible_rows_before_heading_mask": 222181,
+    "reverse_motion_rows": 266,
+    "reverse_motion_fraction": 0.0011972220846967112,
+    "reverse_motion_rows_outside_jump_mask": 265,
+    "longest_reverse_runs_per_fish": [
+      {
+        "id": 0,
+        "start": 14630,
+        "end": 14634,
+        "segment": 4,
+        "n": 5
+      },
+      {
+        "id": 1,
+        "start": 13439,
+        "end": 13446,
+        "segment": 3,
+        "n": 8
+      },
+      {
+        "id": 2,
+        "start": 15245,
+        "end": 15252,
+        "segment": 4,
+        "n": 8
+      },
+      {
+        "id": 3,
+        "start": 15808,
+        "end": 15830,
+        "segment": 4,
+        "n": 23
+      },
+      {
+        "id": 4,
+        "start": 2317,
+        "end": 2321,
+        "segment": 0,
+        "n": 5
+      },
+      {
+        "id": 5,
+        "start": 24234,
+        "end": 24237,
+        "segment": 6,
+        "n": 4
+      },
+      {
+        "id": 6,
+        "start": 19369,
+        "end": 19370,
+        "segment": 5,
+        "n": 2
+      },
+      {
+        "id": 7,
+        "start": 6535,
+        "end": 6552,
+        "segment": 1,
+        "n": 18
+      },
+      {
+        "id": 8,
+        "start": 7719,
+        "end": 7721,
+        "segment": 2,
+        "n": 3
+      },
+      {
+        "id": 9,
+        "start": 15717,
+        "end": 15729,
+        "segment": 4,
+        "n": 13
+      }
+    ],
+    "interpretation": "Flags reverse travel relative to tracked heading, not proven head-tail flips. Sustained intervals are not automatically excluded without video validation.",
+    "mask_policy": "Finite speed >= threshold; heading_valid is not used in the primary denominator or runs."
+  },
+  "heading_qa": {
+    "jump_flagged_rows": 4,
+    "axis_disagreement_abs_rad": {
+      "n": 245780,
+      "0.05": 0.002978396020731533,
+      "0.5": 0.0323813728799498,
+      "0.95": 0.18724718197148651
+    },
+    "axis_disagreement_over_pi_over_2_rows": 0
+  },
+  "threshold_sensitivity": [
+    {
+      "threshold_bl_s": 0.25,
+      "slip_eligible_fraction": 0.9707706078606885,
+      "circulation_eligible_frame_fraction": 0.9317275612336235,
+      "circulation_median": 0.29669451533497815
+    },
+    {
+      "threshold_bl_s": 0.5,
+      "slip_eligible_fraction": 0.9038855887378957,
+      "circulation_eligible_frame_fraction": 0.46618927496134754,
+      "circulation_median": 0.38308575751335017
+    },
+    {
+      "threshold_bl_s": 1.0,
+      "slip_eligible_fraction": 0.6973757018471805,
+      "circulation_eligible_frame_fraction": 0.023272845634307104,
+      "circulation_median": 0.6985132314749423
+    }
+  ],
+  "polarization_by_circulation_eligibility": {
+    "eligible": {
+      "n": 11434,
+      "0.05": 0.23665901943058623,
+      "0.5": 0.8775987616711529,
+      "0.95": 0.9866030176862671
+    },
+    "ineligible": {
+      "n": 13120,
+      "0.05": 0.43931455280888154,
+      "0.5": 0.9076805851130882,
+      "0.95": 0.9881742621440287
+    }
+  },
+  "speed_sensitivity": [
+    {
+      "window": 7,
+      "n": 244660,
+      "0.05": 0.36068201649515647,
+      "0.5": 1.4624303317370506,
+      "0.95": 3.562996918743388
+    },
+    {
+      "window": 11,
+      "n": 244660,
+      "0.05": 0.355137235006749,
+      "0.5": 1.4525069060113291,
+      "0.95": 3.5310105314698026
+    },
+    {
+      "window": 15,
+      "n": 244660,
+      "0.05": 0.35524790647000715,
+      "0.5": 1.4492224885607334,
+      "0.95": 3.498024885830201
+    }
+  ],
+  "curvature_sensitivity": [
+    {
+      "neighborhood": 5,
+      "n": 245780,
+      "0.05": -0.6431394462019415,
+      "0.5": 0.015824329462625127,
+      "0.95": 0.7036548327897366
+    },
+    {
+      "neighborhood": 7,
+      "n": 245780,
+      "0.05": -0.6359656794039505,
+      "0.5": 0.015397733635581732,
+      "0.95": 0.6943039336241841
+    },
+    {
+      "neighborhood": 9,
+      "n": 245780,
+      "0.05": -0.6275942177551668,
+      "0.5": 0.014636792164028429,
+      "0.95": 0.6819289610882178
+    }
+  ],
+  "video": {
+    "status": "generated_for_visual_review",
+    "track_frames": [
+      2458,
+      12292,
+      22126
+    ],
+    "video_candidates": [
+      [
+        2457,
+        2458
+      ],
+      [
+        12291,
+        12292
+      ],
+      [
+        22125,
+        22126
+      ]
+    ],
+    "note": "Overlays are qualitative; no numerical alignment accuracy inferred."
+  }
+}

@@ -1,0 +1,12 @@
+Publication check, November 7, 2026.
+Coordinator execution in the locked local environment (Python 3.13).
+Command: .venv/bin/python -m pytest -q
+
+................................................................ [ 46%]
+............................................................... [ 92%]
+..........                                                               [100%]
+137 passed, 17 subtests passed in 24.71s
+
+Includes the new eligibility diagnostic's six tests and nine invalid-input subtests.
+This suite uses synthetic fixtures and mocked external calls. It does not independently
+rerun the complete real-data pipeline. GitHub PR CI separately checks Python 3.11 and 3.13.

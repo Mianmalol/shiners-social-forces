@@ -1,0 +1,41 @@
+Starting 10-fish__0066: tracks, networks
+  tracks.parquet: 113,042,564 bytes; member CRC verified; SHA256 f52739de3638b29551bdc70b8753147fdfb39bbbae64640126be4dbc5069af96
+  networks.parquet: 14,974,855 bytes; member CRC verified; SHA256 8db6152e66da6e44c0fde5a148dae55da59e387fb0168acc592ed9d5ac7dc4da
+Completed 10-fish__0066
+Starting 10-fish__0105: tracks, networks
+  tracks.parquet: 113,041,443 bytes; member CRC verified; SHA256 61f53fd4e44f24813e567079e1ba81e24fed71d93edd7e855ec1e77a7421ef72
+  networks.parquet: 14,713,424 bytes; member CRC verified; SHA256 d17ed98b67ee6910f0afc601165bc63e3110c47a3489239fcabdf99f15b7c709
+Completed 10-fish__0105
+Starting 10-fish__0126: tracks, networks
+  tracks.parquet: 113,285,235 bytes; member CRC verified; SHA256 123708dc130f1b6b0d53d8cdb68d24566ff1531be93b125128fe37c8f47331d1
+  networks.parquet: 15,467,905 bytes; member CRC verified; SHA256 ae465b1a200f6cb006d7f41ed44006766d5dcf61e4cbf01351186c1d208e152e
+Completed 10-fish__0126
+Starting 30-fish__0084: tracks, networks
+  tracks.parquet: 311,402,361 bytes; member CRC verified; SHA256 83bfcfc12323f5f234cee4f899ba888fe60fa5552fa543f68015cb3a8f59ac2f
+  networks.parquet: 113,047,748 bytes; member CRC verified; SHA256 e9c515544b81e74353aacdeca540aaa41df9ad71a6ab80dc77cdfcdc8da7ca72
+Completed 30-fish__0084
+Starting 30-fish__0115: tracks, networks
+  tracks.parquet: 311,402,523 bytes; member CRC verified; SHA256 37819f0770f494d70beab9be24fc941d8a324785ce8b10d851239c70b85d0fea
+  networks.parquet: 119,108,150 bytes; member CRC verified; SHA256 ab364fcfbd673cf4c0eae53c31aa5365cbab68387adab603ba094f8c37052f38
+Completed 30-fish__0115
+Starting 30-fish__0120: tracks, networks
+  tracks.parquet: 311,161,066 bytes; member CRC verified; SHA256 07bb58368e69bdac6a5b5d0315c35b341720f57f312baedf0b37ddb325555bc6
+  networks.parquet: 129,319,556 bytes; member CRC verified; SHA256 f43fdf90602cd2556d2bb461e1cd879177bfd906a84512977dcf105d3307a1c4
+Completed 30-fish__0120
+Starting 70-fish__0103: tracks, networks
+  tracks.parquet: 720,944,181 bytes; member CRC verified; SHA256 1dcd0ffc8e64b0a40d6591edec502dde3d9cc73bb44035c5a25f70b03421f636
+  networks.parquet: 469,396,945 bytes; member CRC verified; SHA256 3e92d1decc5e8ee74c21375c73dff442feb3db091251830fd487735644c03b1b
+Completed 70-fish__0103
+Starting 70-fish__0107: tracks, networks
+  tracks.parquet: 721,017,544 bytes; member CRC verified; SHA256 b51c2a7a774e9c763f956b1fafacd73c81ae0c7c4fa73c3ad4e76c60160d80f0
+  networks.parquet: 418,811,330 bytes; member CRC verified; SHA256 de06830e65dd4e30f3978261d90ef168ab8f225935a6abe4ca244620c65aa46c
+Completed 70-fish__0107
+Starting 70-fish__0124: tracks, networks
+  tracks.parquet: 719,261,900 bytes; member CRC verified; SHA256 bf2611c2090271392801069c2420ae36cbb885d98ca6b56001436f49978afd41
+  networks.parquet: 486,780,025 bytes; member CRC verified; SHA256 a71043c2a227dc3312b4b271c3168bd5024720ee0e817c1988d499036299e7c4
+Completed 70-fish__0124
+Starting 150-fish__150-fish: tracks, networks
+  tracks.parquet: 1,139,235,904 bytes; member CRC verified; SHA256 3b4b8dd0555667a517bee8a2a1d0da1bc7a4d8d520e343d8069f08d9c688b882
+  networks.parquet: 1,169,979,345 bytes; member CRC verified; SHA256 553f7b3afbf79289cbb38514073414ef8e028ec1e5271b58ddb10b1a2cf6a06f
+Completed 150-fish__150-fish
+Bounded request allowance used: 7,397,425,204 bytes; full archive SHA256 not verified.

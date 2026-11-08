@@ -1,0 +1,5 @@
+Independently recheck the narrative-only corrections requested in comparison-results/review.md. The corrected report, coordinator disposition, comparison tables, validator evidence and metric source are supplied. No numerical analyses or figures changed.
+
+Verify B1–B4: P smoothing affects only mask support and is no longer presented as an independent signal-smoothing check; the short Monday summary includes151's non-continuation; P coverage retains nonzero exclusions and the exact validator difference is stated; spread's full-duration overlap and geometric expectation are clear. Check that optional added qualifications do not introduce unsupported biological claims.
+
+Return PASS or CHANGES_REQUESTED for sharing the corrected descriptive report locally with its caveats, and list any remaining material wording/numerical contradiction. This is focused confirmation, not a new claim to have exhaustively checked all nested outputs. You still have no tools and did not run code, inspect figures or independently reproduce results. Distinguish the coordinator's execution evidence from your own reasoning.
