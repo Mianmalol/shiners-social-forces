@@ -1,0 +1,85 @@
+{
+  "created_at": "2026-11-08T00:16:44.789546+00:00",
+  "prompt": {
+    "path": "docs/workflow/tasks/fix-review-prompt.md",
+    "size_bytes": 989,
+    "sha256": "a21207fd029acec02994fe96c423479291aac5ae2d7d28a0e3ebd87ed8e1b0bb"
+  },
+  "inputs": [
+    {
+      "path": "docs/workflow/reviews/M1-implementation/review.md",
+      "size_bytes": 12534,
+      "sha256": "ad6c75c7be2636022171423dc945b681b7257f6a94cc4e8b8211f0ffbcdff760"
+    },
+    {
+      "path": "docs/methods.md",
+      "size_bytes": 9453,
+      "sha256": "3d7c9636b6db7c52d30518425896ca22ae10cd4895b3096551c49b803328366a"
+    },
+    {
+      "path": "src/shiners/metrics.py",
+      "size_bytes": 16951,
+      "sha256": "72b20c3d6815a6ae607fdce8af61a9c8caa68e2dc2e5e00688c5689fb62a3cc6"
+    },
+    {
+      "path": "src/shiners/pilot.py",
+      "size_bytes": 14933,
+      "sha256": "2100dda23f28d360c445b78c4f39bd977c86673c5b5c17d6ba28fe583248df91"
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "size_bytes": 10076,
+      "sha256": "b83d2c5f4a29218a56b68007f4d1f7788cceb4b101778846be2b5612edfcf5ef"
+    },
+    {
+      "path": "reports/test-results-final.txt",
+      "size_bytes": 110,
+      "sha256": "d6d273ba36298128fbed36176a82f46cf4ecee2a4ef5182520910368a8b7e436"
+    },
+    {
+      "path": "reports/pilot-0066-reviewed/summary.json",
+      "size_bytes": 8843,
+      "sha256": "600940a6768fcb74165795b5084af4422fb12f524ca54277e1931567cd45a72a"
+    },
+    {
+      "path": "reports/pilot-0066-reviewed/tables/speed-sensitivity.csv",
+      "size_bytes": 222,
+      "sha256": "5394e8bc8c38954b0d6110b19ab921a4a6513de49e84ab90b0f66c536d77022e"
+    },
+    {
+      "path": "reports/pilot-0066-reviewed/tables/curvature-sensitivity.csv",
+      "size_bytes": 236,
+      "sha256": "6ad85956a6e6c212e3d7759633eeab9fc45d49069d9c3cb006527b7b7aa2ffc3"
+    },
+    {
+      "path": "reports/findings.md",
+      "size_bytes": 12075,
+      "sha256": "ee2eef43c7085bccb620eee496c997d2696b1a577731e5a1108342ea85b65de0"
+    }
+  ],
+  "packet_sha256": "9cc073c2dd88937f09152e6f76fc1b6e6b013b672c4670c74ca94bec97171b52",
+  "git": {
+    "head": "82bf6c865b46b5aeb4cd5205671c833766e2c3d6",
+    "dirty": true,
+    "status_porcelain": " M .gitignore\n M README.md\n?? ORCHESTRATION.md\n?? analysis/0066/README.md\n?? analysis/0066/audit.json\n?? analysis/0066/network-column-profile.csv\n?? analysis/0066/overview.png\n?? analysis/0066/track-column-profile.csv\n?? configs/pilot.json\n?? docs/methods.md\n?? docs/modeling-start.md\n?? docs/workflow/decisions.md\n?? docs/workflow/reviews/M0-initial/input.md\n?? docs/workflow/reviews/M0-initial/response.json\n?? docs/workflow/reviews/M0-initial/review.md\n?? docs/workflow/reviews/M0-initial/snapshot.json\n?? docs/workflow/reviews/M0-initial/stderr.txt\n?? docs/workflow/reviews/M1-implementation/manifest.json\n?? docs/workflow/reviews/M1-implementation/prompt.md\n?? docs/workflow/reviews/M1-implementation/response.json\n?? docs/workflow/reviews/M1-implementation/review.md\n?? docs/workflow/reviews/M1-implementation/snapshot.txt\n?? docs/workflow/reviews/M1-implementation/status.json\n?? docs/workflow/reviews/M1-implementation/stderr.txt\n?? docs/workflow/status.md\n?? docs/workflow/tasks/M0.md\n?? docs/workflow/tasks/M1.md\n?? docs/workflow/tasks/fix-review-prompt.md\n?? docs/workflow/tasks/implementation-review-prompt.md\n?? pyproject.toml\n?? reports/findings.md\n?? reports/pilot-0066-final/config.json\n?? reports/pilot-0066-final/figures/01-movement.png\n?? reports/pilot-0066-final/figures/01-movement.svg\n?? reports/pilot-0066-final/figures/02-posture.png\n?? reports/pilot-0066-final/figures/02-posture.svg\n?? reports/pilot-0066-final/figures/03-organization.png\n?? reports/pilot-0066-final/figures/03-organization.svg\n?? reports/pilot-0066-final/figures/04-spacing.png\n?? reports/pilot-0066-final/figures/04-spacing.svg\n?? reports/pilot-0066-final/figures/05-visibility.png\n?? reports/pilot-0066-final/figures/05-visibility.svg\n?? reports/pilot-0066-final/figures/video-overlays.png\n?? reports/pilot-0066-final/provenance.json\n?? reports/pilot-0066-final/summary.json\n?? reports/pilot-0066-final/tables/angular-size.csv\n?? reports/pilot-0066-final/tables/collective.csv\n?? reports/pilot-0066-final/tables/curvature-sensitivity.csv\n?? reports/pilot-0066-final/tables/curvature.csv\n?? reports/pilot-0066-final/tables/degree.csv\n?? reports/pilot-0066-final/tables/nearest.csv\n?? reports/pilot-0066-final/tables/spatial-map.csv\n?? reports/pilot-0066-final/tables/speed-sensitivity.csv\n?? reports/pilot-0066-final/tables/speed.csv\n?? reports/pilot-0066-final/tables/threshold-sensitivity.csv\n?? reports/pilot-0066-final/tables/turn.csv\n?? reports/pilot-0066-final/tables/visibility-time.csv\n?? reports/pilot-0066-reviewed/config.json\n?? reports/pilot-0066-reviewed/figures/01-movement.png\n?? reports/pilot-0066-reviewed/figures/01-movement.svg\n?? reports/pilot-0066-reviewed/figures/02-posture.png\n?? reports/pilot-0066-reviewed/figures/02-posture.svg\n?? reports/pilot-0066-reviewed/figures/03-organization.png\n?? reports/pilot-0066-reviewed/figures/03-organization.svg\n?? reports/pilot-0066-reviewed/figures/04-spacing.png\n?? reports/pilot-0066-reviewed/figures/04-spacing.svg\n?? reports/pilot-0066-reviewed/figures/05-visibility.png\n?? reports/pilot-0066-reviewed/figures/05-visibility.svg\n?? reports/pilot-0066-reviewed/figures/video-overlays.png\n?? reports/pilot-0066-reviewed/provenance.json\n?? reports/pilot-0066-reviewed/summary.json\n?? reports/pilot-0066-reviewed/tables/angular-size.csv\n?? reports/pilot-0066-reviewed/tables/collective.csv\n?? reports/pilot-0066-reviewed/tables/curvature-sensitivity.csv\n?? reports/pilot-0066-reviewed/tables/curvature.csv\n?? reports/pilot-0066-reviewed/tables/degree.csv\n?? reports/pilot-0066-reviewed/tables/nearest.csv\n?? reports/pilot-0066-reviewed/tables/spatial-map.csv\n?? reports/pilot-0066-reviewed/tables/speed-sensitivity.csv\n?? reports/pilot-0066-reviewed/tables/speed.csv\n?? reports/pilot-0066-reviewed/tables/threshold-sensitivity.csv\n?? reports/pilot-0066-reviewed/tables/turn.csv\n?? reports/pilot-0066-reviewed/tables/visibility-time.csv\n?? reports/pilot-run-final.log\n?? reports/pilot-run-reviewed.log\n?? reports/test-results-final.txt\n?? reports/test-results.txt\n?? scripts/audit_trial.py\n?? scripts/claude_review.py\n?? scripts/fetch_pilot.py\n?? src/shiners/__init__.py\n?? src/shiners/metrics.py\n?? src/shiners/pilot.py\n?? src/shiners/validation.py\n?? tests/test_claude_review.py\n?? tests/test_fetch_pilot.py\n?? tests/test_metrics.py\n?? tests/test_validation.py\n?? uv.lock",
+    "snapshot_authority": "The listed file hashes and snapshot, including uncommitted files, define the reviewed inputs."
+  },
+  "scope": "tool-free review of explicit text snapshot; no independent command execution",
+  "command": [
+    "claude",
+    "-p",
+    "--output-format",
+    "json",
+    "--tools",
+    "",
+    "--safe-mode",
+    "--strict-mcp-config",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--permission-mode",
+    "dontAsk"
+  ],
+  "requested_model": null,
+  "model_policy": "Claude CLI configured/default model; no fallback requested",
+  "timeout_seconds": 300.0
+}

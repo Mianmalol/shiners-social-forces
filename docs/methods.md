@@ -1,0 +1,47 @@
+# Pilot methods — 0066
+
+Status: revised after Claude Opus 5.5 review M0-initial; implementation review remains pending. Scope: descriptive pilot only, not all-trial atlas. OpenAI coordinates and implements; Claude independently reviews. No model fitting or causal claims. Preserve original pilot in analysis/0066.
+
+## Data and eligibility
+
+One trial, 10-fish/0066. Read track columns from actual schema. Natural keys (frame,id); network (frame,id1,id2). Require unique keys, finite mandatory numeric columns, positive lengths, identical time and segment across fish within a frame, constant fish set, and positive time increments. Split each fish at segment changes or nonunit frame jumps. Network endpoints must match tracks; no self links, duplicate links, nonpositive ray counts or nonfinite metrics. Explicitly compare network frame coverage to track coverage: a missing whole frame is unknown, not zero visibility, absent separate completeness evidence. For this pilot, restrict visibility analysis to covered frames and report count of uncovered frames. In covered frames, include zero-degree fish. Assert reported network distances match X/Y center distances within 1e-4 pixels for float64 or 1e-3 pixels if any source position/distance is float32; report dtypes and discrepancy; angular_size_deg = .36*n_rays within numerical precision.
+
+## Units and smoothing
+
+Image x right, y down. Keep pixel quantities and normalize descriptive distances/speeds by fixed trial median body_length L; no physical calibration. This is exploratory normalization, not a predictive training transform. Pilot temporal filter: Savitzky–Golay cubic, windows 7,11,15 frames (~0.23,0.37,0.50 s). Primary w=11. Derivatives use actual within-block dt, which must be regular within tolerance. Exclude w//2+1 points at both ends so known noisy join-adjacent samples do not enter retained derivative windows; require blocks longer than twice this margin; do not bridge gaps. Before unwrapping, flag adjacent samples with abs(wrap(delta ANGLE)) > pi/2. Exclude their entire SG support from turn rate and slip; omit affected frames from polarization. Report head-to-tail axis disagreement separately as QA, without silently treating bent midlines as heading errors. Unwrap ANGLE within blocks before deriving turn rate. These are noncausal exploratory derivatives. Sensitivity comparisons use common eligible rows across windows.
+
+## B1 individual movement
+
+v = derivative of X,Y; a = second derivative; speed=norm(v)/L; acceleration magnitude=norm(a)/L. Body turning = derivative of unwrapped ANGLE (rad/s), positive clockwise in image coordinates. Slip = wrapped(atan2(vy,vx)-ANGLE), rad; exclude speed <0.5 L/s and heading-jump-affected windows. Report eligible fractions. Evaluate slip and circulation eligibility at .25,.5,1.0 L/s. Estimate an illustrative derivative-noise scale from raw-minus-smoothed position residuals and SG coefficient norms; residuals include true movement and are correlated, so this is a sensitivity diagnostic, not a calibrated tracking-error model. Primary plot: speed and turn-rate distributions and speed sensitivity, weighted equally across eligible fish-frames. Descriptive percentiles, no independent-sample confidence intervals.
+
+## B2 posture
+
+Use only midline indices 0..20, not eyes 21..22. For each row, let normalized arc coordinate u=linspace(0,1,21) per source equal spacing. Fit cubic x(u), y(u) by least squares on indices 7..13; evaluate at u=.5. Curvature k=(x' y'' - y' x'')/(x'^2+y'^2)^(3/2); exclude derivative norm <=1e-8 pixels per u. Positive means clockwise head-to-tail tangent rotation in y-down coordinates. When the head-to-tail tangent is opposite the body heading, this is concavity toward fish-left; it does not share the positive-right-turn convention. Do not infer turn direction from curvature alone. Report k in 1/px and k*L. Compare neighborhoods 5,7,9 points on common eligible rows. Posture figure: distribution of k*L plus midlines at predefined temporal quantiles .1,.5,.9 for the lowest ID, translated to head and rotated into body-heading coordinates; examples are illustrations, not typicality claims. Geometric curvature can reflect tracker noise and is not a direct force or intent measurement.
+
+## B3 collective organization
+
+P=norm(mean_i([cos ANGLE_i,sin ANGLE_i])). RMS spread=sqrt(mean(norm(r_i-centroid)^2))/L, using SG-smoothed positions; nearest-neighbor distances use raw positions. Centroid speed=norm(mean_i v_i)/L, only frames with all fish valid.
+
+Circulation: r_i is displacement from instantaneous SG-smoothed position centroid, u_i=v_i-mean_j v_j, with all v_j required valid. Eligible fish have norm(r_i)>1e-6 L and norm(u_i)>=0.5 L/s. C=abs(mean_i cross(rhat_i,uhat_i)) on eligible fish, where cross in y-down coordinates is rx*uy-ry*ux. Emit C only if at least 80% of fish eligible; save eligible fraction. Also save signed mean circulation. An illustrative iid isotropic-direction reference is E|mean cross| approximately 1/sqrt(pi*n_eligible); centroid-relative velocities are dependent, so this reference is not a calibrated null or significance test. Do not identify low/moderate C with milling from this alone. This measures coherent circulation in centroid-relative motion; pure translation has undefined C, not zero. P does not require velocity and is available on complete frames outside the conservative SG-support heading-jump mask. Figure: P,C,spread over time (lines broken at missing/segment joins) plus P vs C only valid frames. Low P does not establish disorder.
+
+## B4 spatial relations
+
+All ordered focal-neighbor pairs per complete finite frame, excluding self. The occupancy map uses raw headings including SG-support and reverse-motion candidate rows, with this limitation disclosed; no head-tail correction is inferred automatically. Delta=r_j-r_i uses raw tracker positions. On maps horizontal=forward, vertical=fish-right increasing down; posture uses the same convention. Forward=dx*cos(theta_i)+dy*sin(theta_i); right=-dx*sin(theta_i)+dy*cos(theta_i). Scale by L. Nearest distance=min_j norm(delta)/L. Relative-heading distributions are deferred; no relative-heading claim is made in this pilot. Primary body-frame heatmap uses bins fixed [-10,10] L in each axis, 40x40 bins; colors are mean neighbors per eligible focal observation per square L. Normalize by ALL eligible focal observations, not just pairs inside the view; report displayed pair fraction. Spacing distribution includes all finite nearest distances. No wall-based claims until arena geometry is validated. Map asymmetry is occupancy, not attraction or avoidance.
+
+## B5 reconstructed visibility
+
+Only covered frames as above. Out-degree of observer id1, including zero-degree fish. Visible fraction=degree/(N-1). Directed reciprocity=number of directed edges with reverse present / number of directed edges; report edge-weighted pooled value, not ambiguous mean. Angular size distribution across edges. Persistence is deferred to later pilot extension, to avoid implying disappearance at gaps. Primary figure: visible-degree histogram, per-frame mean degree time trace, angular size distribution. Do not equate visibility with influence. Table direction id1 sees id2, later GNN messages id2 to id1.
+
+## Video check and representative selection
+
+Attempt overlays at tracked frames nearest the 10th,50th,90th time quantiles. Record exact frame IDs, compare video frame i and i-1 because source reports one-frame ambiguity, show both if ambiguous. Overlay midlines and IDs; record visual assessment, not a numeric alignment accuracy without measurement. No tank-wall geometry is inferred in this pilot.
+
+## Tests and output provenance
+
+Before real runs: analytic constant speed and acceleration; signed analytic turn across wrapping; segment gap exclusion; parallel headings P=1; symmetric tangential circle C=1; pure translation C undefined; straight midline k=0; sampled circular arc k approximately 1/R with sign in y-down; known forward/right neighbor position; directed graph containing zero-degree node; invalid/dangling inputs rejected. Reviewer independently reasons about analytic results; executed test logs are supplied, but tool-free Claude review is NOT independent execution.
+
+Save environment lock, config, source snapshot hashes, raw input SHA256 and ZIP CRC provenance, commands, filters/counts, summary CSVs, five figures, JSON metrics and report. Mark raw measurements/derived/reconstructed evidence distinctly. All quantitative results pilot-only. No confidence intervals or causal inference. Frozen source snapshot for each Claude review; changes after review require new hashes and review.
+
+## Sustained heading QA after implementation review
+
+Report each >pi/2 contiguous heading step with fish ID, segment and frame. Separately flag speed-eligible rows where abs(wrap(travel direction minus body heading))>pi/2, before heading_valid masks, and report the longest contiguous run per fish. Break runs at frame gaps/segment changes. These flags can reflect backward swimming, tracking defects or derivative error; they do not prove a head-tail flip. Existing axis agreement cannot exclude simultaneous heading/pose reversal. Preserve candidate intervals and disclose them as unresolved rather than silently correcting headings. Circulation/alignment plots are explicitly conditioned on relative-motion eligibility, not a joint distribution of all recorded frames.

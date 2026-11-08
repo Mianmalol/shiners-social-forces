@@ -1,0 +1,163 @@
+{
+  "trial": "0066",
+  "track_rows": 245780,
+  "track_columns": 56,
+  "network_rows": 1662869,
+  "fish": 10,
+  "tracked_frames": 24578,
+  "frame_min": 1,
+  "frame_max": 24584,
+  "missing_frame_numbers": [
+    3597,
+    7193,
+    10790,
+    14386,
+    17982,
+    21579
+  ],
+  "segments": [
+    {
+      "segment": 0,
+      "first_frame": 1,
+      "last_frame": 3596,
+      "frames": 3596
+    },
+    {
+      "segment": 1,
+      "first_frame": 3598,
+      "last_frame": 7192,
+      "frames": 3595
+    },
+    {
+      "segment": 2,
+      "first_frame": 7194,
+      "last_frame": 10789,
+      "frames": 3596
+    },
+    {
+      "segment": 3,
+      "first_frame": 10791,
+      "last_frame": 14385,
+      "frames": 3595
+    },
+    {
+      "segment": 4,
+      "first_frame": 14387,
+      "last_frame": 17981,
+      "frames": 3595
+    },
+    {
+      "segment": 5,
+      "first_frame": 17983,
+      "last_frame": 21578,
+      "frames": 3596
+    },
+    {
+      "segment": 6,
+      "first_frame": 21580,
+      "last_frame": 24584,
+      "frames": 3005
+    }
+  ],
+  "track_nulls": {
+    "ANGLE": 0,
+    "X": 0,
+    "Y": 0,
+    "body_length": 0,
+    "frame": 0,
+    "group": 0,
+    "id": 0,
+    "poseX0": 0,
+    "poseX1": 0,
+    "poseX10": 0,
+    "poseX11": 0,
+    "poseX12": 0,
+    "poseX13": 0,
+    "poseX14": 0,
+    "poseX15": 0,
+    "poseX16": 0,
+    "poseX17": 0,
+    "poseX18": 0,
+    "poseX19": 0,
+    "poseX2": 0,
+    "poseX20": 0,
+    "poseX21": 0,
+    "poseX22": 0,
+    "poseX3": 0,
+    "poseX4": 0,
+    "poseX5": 0,
+    "poseX6": 0,
+    "poseX7": 0,
+    "poseX8": 0,
+    "poseX9": 0,
+    "poseY0": 0,
+    "poseY1": 0,
+    "poseY10": 0,
+    "poseY11": 0,
+    "poseY12": 0,
+    "poseY13": 0,
+    "poseY14": 0,
+    "poseY15": 0,
+    "poseY16": 0,
+    "poseY17": 0,
+    "poseY18": 0,
+    "poseY19": 0,
+    "poseY2": 0,
+    "poseY20": 0,
+    "poseY21": 0,
+    "poseY22": 0,
+    "poseY3": 0,
+    "poseY4": 0,
+    "poseY5": 0,
+    "poseY6": 0,
+    "poseY7": 0,
+    "poseY8": 0,
+    "poseY9": 0,
+    "segment": 0,
+    "sequence": 0,
+    "time": 0
+  },
+  "network_nulls": {
+    "frame": 0,
+    "id1": 0,
+    "id2": 0,
+    "perspective": 0,
+    "angular_size_deg": 0,
+    "n_rays": 0,
+    "distance": 0,
+    "group": 0,
+    "sequence": 0
+  },
+  "nonfinite_numeric_tracks": 0,
+  "body_length_px": {
+    "0.01": 25.7318212034157,
+    "0.05": 26.52234246337946,
+    "0.5": 38.987234372733916,
+    "0.95": 43.16838053964206,
+    "0.99": 44.13684020775973
+  },
+  "mean_visible_neighbors": 6.76568069004801,
+  "reciprocal_edge_fraction": 0.8507874041791627,
+  "angular_size_formula_max_error": 5.684341886080802e-14,
+  "polarization": {
+    "0.01": 0.16074430481827146,
+    "0.05": 0.3212732583678673,
+    "0.5": 0.8939667221401403,
+    "0.95": 0.9874315438405006,
+    "0.99": 0.993088563026102
+  },
+  "speed_body_lengths_per_second": {
+    "0.01": 0.14624274941307827,
+    "0.05": 0.3551922845287849,
+    "0.5": 1.4526811892491773,
+    "0.95": 3.531579382965595,
+    "0.99": 4.416293761270989
+  },
+  "speed_method": "11-frame cubic Savitzky-Golay derivative per fish/segment, five edge frames excluded; normalized by trial median body_length",
+  "checks_passed": [
+    "unique track and edge keys",
+    "edge endpoints exist",
+    "no self links",
+    "regular within-segment timestamps and frames"
+  ]
+}

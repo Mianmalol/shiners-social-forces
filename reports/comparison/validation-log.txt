@@ -1,0 +1,11 @@
+10-fish__0066: validating saved hashes, accounting and independent P samples
+10-fish__0105: validating saved hashes, accounting and independent P samples
+10-fish__0126: validating saved hashes, accounting and independent P samples
+30-fish__0084: validating saved hashes, accounting and independent P samples
+30-fish__0115: validating saved hashes, accounting and independent P samples
+30-fish__0120: validating saved hashes, accounting and independent P samples
+70-fish__0103: validating saved hashes, accounting and independent P samples
+70-fish__0107: validating saved hashes, accounting and independent P samples
+70-fish__0124: validating saved hashes, accounting and independent P samples
+150-fish__150-fish: validating saved hashes, accounting and independent P samples
+Computational checks passed for 10 trials; report: /Users/marcoli/github/shiners-social-forces/reports/comparison/validation.json

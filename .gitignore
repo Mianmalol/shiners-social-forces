@@ -4,3 +4,12 @@ __pycache__/
 *.zip.part*
 shiners-social-forces/
 downloads/
+.venv/
+.pytest_cache/
+.cache/
+data/
+*.egg-info/
+# Regenerable frame-level comparison caches; retain summaries, figures and compact tables.
+reports/comparison*/trials/*/collective.csv
+reports/comparison*/trials/*/tables/collective-*.csv
+reports/comparison*/trials/*/network/per_frame.csv

@@ -1,0 +1,42 @@
+{
+  "smoothing_windows": [
+    7,
+    11,
+    15
+  ],
+  "primary_window": 11,
+  "polynomial_order": 3,
+  "low_speed_bl_s": 0.5,
+  "curvature_neighborhoods": [
+    5,
+    7,
+    9
+  ],
+  "primary_curvature_neighborhood": 7,
+  "circulation_min_fraction": 0.8,
+  "spatial_extent_bl": 10,
+  "spatial_bins": 40,
+  "video_quantiles": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "low_speed_sensitivity_bl_s": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "trials": [
+    "10-fish__0066",
+    "10-fish__0105",
+    "10-fish__0126",
+    "30-fish__0084",
+    "30-fish__0115",
+    "30-fish__0120",
+    "70-fish__0103",
+    "70-fish__0107",
+    "70-fish__0124",
+    "150-fish__150-fish"
+  ],
+  "network_batch_size": 131072
+}
